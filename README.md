@@ -24,8 +24,11 @@ Mykeyboard/
 ## Hardware
 
 - **KiCad**: versión 10.x (esquemático y PCB).
+- **Librería de footprints**: [ScottoKicad](https://github.com/joe-scotto/scottokeebs/tree/main/Extras/ScottoKicad) (submódulo en `hardware/shared/ScottoKicad`, sparse checkout de solo `Extras/ScottoKicad`). Licencia **CC BY-NC-SA 4.0** (uso no comercial).
 - **Layout**: split ergonómico (a definir: columnar stagger, thumb clusters, número de teclas).
 - **Conexión entre mitades**: a decidir (TRRS, inalámbrico, etc.).
+
+> Nota de licencia: ScottoKicad es CC BY-NC-SA 4.0. Si este proyecto deriva de un diseño ScottoKeeb convertido a PCB, su autor prefiere que no se publiquen los archivos de diseño/producción públicamente.
 
 ## Firmware
 
