@@ -1,0 +1,26 @@
+# KiCad
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*.kicad_orig
+*.kicad_ps
+*.kicad_pcb-bak*
+*.kicad_sch-bak*
+__pycache__/
+*.pyc
+
+# Fabricación / generados
+hardware/*/gerber/
+hardware/*/drill/
+hardware/*/output/
+*.gbr
+*.drl
+*.pos
+
+# Firmware
+firmware/build/
+firmware/.build/
+
+# Sistema
+.DS_Store
+*.swp
