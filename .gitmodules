@@ -1,0 +1,3 @@
+[submodule "hardware/shared/ScottoKicad"]
+	path = hardware/shared/ScottoKicad
+	url = https://github.com/joe-scotto/scottokeebs.git
