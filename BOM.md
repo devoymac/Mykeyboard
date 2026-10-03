@@ -17,7 +17,6 @@
 | [1N4148 diodes SMD (SOD-123)](https://www.aliexpress.com/item/4000470978915.html) | Matrix diodes (one per key) | 100 | $0.01 | $1.00 | [AliExpress](https://www.aliexpress.com/item/4000470978915.html) |
 | [OLED 128x32 (0.91in I2C SSD1306)](https://www.aliexpress.com/item/32794209149.html) | Display on left half (I2C) | 1 | $1.12 | $1.12 | [AliExpress](https://www.aliexpress.com/item/32794209149.html) |
 | [TRRS audio jack PJ-320A (3.5mm 4-pole)](https://www.aliexpress.com/item/33029465106.html) | Connect the two halves | 10 | $0.16 | $1.60 | [AliExpress](https://www.aliexpress.com/item/33029465106.html) |
-| EC11 rotary encoder (already own) | Knob on right half - have it at home | 1 | $0.00 | $0.00 | Own |
 | **Parts subtotal** | — | — | — | **$27.90** | — |
 | **Tax & shipping** | — | — | — | **$0.00** | — |
 | **Total** | — | — | — | **$27.90** | — |
