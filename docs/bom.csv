@@ -4,5 +4,5 @@ RP2040-Zero,2,1.74,3.49,AliExpress,https://es.aliexpress.com/item/10050086030950
 1N4148 diodes SMD (SOD-123),100,0.010,0.97,AliExpress,https://www.aliexpress.com/item/4000470978915.html,Matrix diodes (one per key),From search - check
 OLED 128x32 (0.91in I2C SSD1306),1,1.12,1.12,AliExpress,https://www.aliexpress.com/item/32794209149.html,Display on left half (I2C),From search - check
 TRRS audio jack PJ-320A (3.5mm 4-pole),10,0.164,1.64,AliExpress,https://www.aliexpress.com/item/33029465106.html,Connect the two halves,From search - check
-EC11 rotary encoder (already own),0,0,0,Own,-,Knob on right half - have it at home,-
-TOTAL,,,,27.59,,,,,
+EC11 rotary encoder (5-pin with push button),2,0.96,1.92,AliExpress,https://www.aliexpress.com/item/32984027505.html,Knob on right half (volume/media),Live (HTTP 200)
+TOTAL,,,,29.51,,,,,

@@ -1,6 +1,6 @@
 # BOM — Under $30 (review copy)
 
-Build total: **~$27.59** (components, before shipping). This is the review version; the importable CSV is `bom.csv`.
+Build total: **~$29.51** (components, before shipping). This is the review version; the importable CSV is `bom.csv`.
 
 ## What's in it (in English)
 
@@ -11,8 +11,8 @@ Build total: **~$27.59** (components, before shipping). This is the review versi
 | 1N4148 diodes (SOD-123) | 100 | $0.97 | One per key, makes the key matrix work |
 | OLED 128x32 (I2C SSD1306) | 1 | $1.12 | Screen on the left half (shows layer, caps, etc.) |
 | TRRS jack PJ-320A (3.5mm 4-pole) | 10 | $1.64 | Connects the two halves together |
-| EC11 rotary encoder | 0 | $0 | Already own one at home |
-| **TOTAL** | | **$27.59** | |
+| EC11 rotary encoder (5-pin, push button) | 2 | $1.92 | Knob on right half (volume / play-pause) |
+| **TOTAL** | | **$29.51** | |
 
 ## How to get it under $30
 
@@ -23,7 +23,7 @@ Build total: **~$27.59** (components, before shipping). This is the review versi
 
 - ✅ **RP2040-Zero** and **switches**: I opened these pages directly and verified the price live.
 - ⚠️ **Diodes, OLED, TRRS**: links found from search (product IDs from listing databases) — open them to confirm they're live before ordering.
-- **EC11 encoder**: not needed — you already have one at home. Confirm its pinout (5-pin, has A/B + switch) matches what you'll wire.
+- ⚠️ **EC11 encoder**: link live (HTTP 200), price from a listing database (2 pcs ~$1.92). Open to confirm before ordering. Make sure it's 5-pin with a push button — the user's one at home isn't usable.
 
 ## Shipping note
 
