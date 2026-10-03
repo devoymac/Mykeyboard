@@ -33,8 +33,8 @@ Mykeyboard/
 - **Layout**: split columnar-stagger ISO-ES, ~37-38 teclas por mitad, placa única que se parte en dos (V-cut/mouse bites).
 - **Controlador**: RP2040-Zero por mitad, conectadas por TRRS.
 - **Switches**: Outemu Silent Lemon V3 (táctiles silenciosos), soldados.
-- **Pantalla**: OLED 128x32 (I2C) en la mitad master.
-- **Extras**: encoder rotatorio EC11 (volumen/medios), hub USB (puerto ratón/pendrive) en la mitad master.
+- **Pantalla**: OLED 128x32 (I2C) en la mitad izquierda.
+- **Extras**: encoder rotatorio EC11 (volumen/medios) en la mitad derecha.
 - Ver [docs/requirements.md](docs/requirements.md), [docs/layout.md](docs/layout.md) y el [BOM](docs/bom.md).
 
 ## Firmware
