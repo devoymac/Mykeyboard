@@ -16,7 +16,6 @@ Teclado split ergonómico, placa única partida en dos mitades. Cantidades basad
 | - | Cristal 12 MHz (hub) | 1 | FE1.1s necesita oscilador. |
 | J | Receptáculo USB-C (maestro) | 1 | Conexión al PC. |
 | J | Receptáculo USB hembra (puerto hub) | 1-2 | Para ratón/pendrive. |
-| S | Botón reset | 1 | To-Reset del RP2040 (master). |
 | R | Resistencias 5.1kΩ (CC1/CC2 USB-C) | 2 | Detección de fuente USB-C. |
 | R | Resistencias varias (pull-ups I2C, etc.) | ~6 | Desacople y pull-ups. |
 | C | Condensadores 0.1µF / desacople | ~10 | Alimentación, hub, cristal. |
