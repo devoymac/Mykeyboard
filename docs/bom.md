@@ -4,6 +4,8 @@ Teclado split ergonómico, placa única partida en dos mitades. Cantidades basad
 
 ## Electrónica
 
+> **USB-C**: se usa el puerto del propio RP2040-Zero de la mitad master (no hace falta receptáculo USB-C aparte ni resistencias CC). El cable del PC se enchufa directo al puerto del RP2040-Zero.
+
 | Ref | Componente | Cant. | Notas |
 |-----|-----------|-------|-------|
 | U1, U2 | RP2040-Zero (Waveshare) | 2 | Uno por mitad. |
@@ -12,10 +14,8 @@ Teclado split ergonómico, placa única partida en dos mitades. Cantidades basad
 | J | OLED 128x32 (I2C) | 1 | Mitad izquierda. |
 | RV1 | Encoder rotatorio EC11 + pulsador | 1 | Mitad derecha (volumen / pausa / siguiente). |
 | J1, J2 | Jack audio 3.5mm TRRS (PJ-320A) | 2 | Conectan las mitades. |
-| J | Receptáculo USB-C (maestro) | 1 | Conexión al PC. |
-| R | Resistencias 5.1kΩ (CC1/CC2 USB-C) | 2 | Detección de fuente USB-C. |
 | R | Resistencias varias (pull-ups I2C, etc.) | ~6 | Desacople y pull-ups. |
-| C | Condensadores 0.1µF / desacople | ~10 | Alimentación, hub, cristal. |
+| C | Condensadores 0.1µF / desacople | ~10 | Alimentación. |
 
 ## Mecánica / Otros
 
