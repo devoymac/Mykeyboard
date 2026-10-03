@@ -14,8 +14,8 @@ Teclado split ergonómico, placa única partida en dos mitades. Cantidades basad
 | J | OLED 128x32 (I2C) | 1 | Mitad izquierda. |
 | RV1 | Encoder rotatorio EC11 + pulsador | 1 | Mitad derecha (volumen / pausa / siguiente). |
 | J1, J2 | Jack audio 3.5mm TRRS (PJ-320A) | 2 | Conectan las mitades. |
-| R | Resistencias varias (pull-ups I2C, etc.) | ~6 | Desacople y pull-ups. |
-| C | Condensadores 0.1µF / desacople | ~10 | Alimentación. |
+
+> **Sin discretos**: al usar módulos RP2040-Zero (con su propio desacople) y módulos OLED/encoder, no hace falta añadir condensadores ni resistencias externas. Solo si el OLED diera problemas de I2C al probar, añadir 2 pull-ups (4.7kΩ).
 
 ## Mecánica / Otros
 
@@ -34,7 +34,7 @@ Teclado split ergonómico, placa única partida en dos mitades. Cantidades basad
 - Switches: ~19 € (lote 90)
 - Diodos: ~3 €
 - OLED + encoder: ~6 €
-- Jacks TRRS, USB-C, discretos: ~5 €
-- **Total electrónica: ~37 €** (sin keycaps ni carcasa)
+- Jacks TRRS: ~2 €
+- **Total electrónica: ~34 €** (sin keycaps ni carcasa)
 
 > Las cantidades de teclas son orientativas; cuadrar con el layout definitivo en [docs/layout.md](layout.md).
