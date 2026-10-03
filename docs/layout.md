@@ -1,9 +1,9 @@
 # Layout del teclado
 
-88 teclas totales = 44 por mano. Split ISO-ES, placa única que se parte en dos mitades.
-Referencia para colocar las teclas en KiCad.
+78 teclas totales = 37 (izquierda) + 41 (derecha). Split ISO-ES, placa única que se parte en dos mitades.
+El clúster de navegación (PrtSc, ScrLk, Pause, Ins, Home, PgUp, Del, End, PgDn) va en **capas** y se muestra en el OLED.
 
-## MITAD IZQUIERDA (44 teclas) — Master (RP2040-Zero + OLED + hub USB + TRRS)
+## MITAD IZQUIERDA (37 teclas) — Master (RP2040-Zero + OLED + encoder + hub USB + TRRS)
 
 ```
 Fila F:     F1    F2    F3    F4    F5    F6
@@ -13,12 +13,11 @@ Home:       A     S     D     F     G
 Inferior:   Z     X     C     V     B
 Modific.:   Tab   Caps  Shift Ctrl  Win   Alt
 Pulgar:              [Espacio  AltGr  Fn  Menú]
-Nav:        Home  PgUp  PgDn  Del   End   Ins   PrtSc
 ```
 
-Conteo: F(6) + Números(6) + Top(5) + Home(5) + Inferior(5) + Mod(6) + Pulgar(4) + Nav(7) = 44
+Conteo: F(6) + Números(6) + Top(5) + Home(5) + Inferior(5) + Mod(6) + Pulgar(4) = 37
 
-## MITAD DERECHA (44 teclas) — Slave (RP2040-Zero + TRRS)
+## MITAD DERECHA (41 teclas) — Slave (RP2040-Zero + TRRS)
 
 ```
 Fila F:     F7    F8    F9    F10   F11   F12
@@ -29,10 +28,9 @@ Inferior:   N     M     ,     .     /
 Modific.:   Enter Bcksp RShift RCtrl Menu  RAlt
 Pulgar:              [Espacio   Fn]
 Flechas:    ←     ↓     ↑     →
-Nav:        Supr  Fin   Inicio
 ```
 
-Conteo: F(6) + Números(6) + Top(5) + Home(7) + Inferior(5) + Mod(6) + Pulgar(2) + Flechas(4) + Nav(3) = 44
+Conteo: F(6) + Números(6) + Top(5) + Home(7) + Inferior(5) + Mod(6) + Pulgar(2) + Flechas(4) = 41
 
 ## Notas
 - La **tilde (´)**, **ç**, **grave (`)**, **circunflejo (^)** y sus variantes Shift van en las teclas ISO-ES de la fila Top/Home derecha.

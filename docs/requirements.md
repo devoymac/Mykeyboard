@@ -4,8 +4,9 @@ Objetivo: teclado ergonómico split de diseño propio. Requisitos recogidos del 
 
 ## Layout
 - Split ergonómico en una sola placa (un solo PCB, un solo controlador por mitad).
-- **88 teclas (44 por mano)**, TKL-split: todas las teclas del G513 Carbon menos el numpad. Incluye `/ * - +` (ya en el bloque principal).
+- **78 teclas (37 izquierda + 41 derecha)**, TKL-split: todas las teclas del G513 Carbon menos el numpad. Incluye `/ * - +` (ya en el bloque principal).
 - La placa se fabrica de una pieza y se parte en dos mitades (V-cut / mouse bites) tras la fabricación.
+- **Clúster de navegación en capas** (PrtSc, ScrLk, Pause, Ins, Home, PgUp, Del, End, PgDn) — no físicas, se muestran en el OLED. Flechas físicas.
 - Fila de números completa (1-9, 0).
 - F1-F12.
 - **Layout ISO-ES** completo: Ñ, tilde (´), diéresis (¨), ç/Ç, grave (`), circunflejo (^).
