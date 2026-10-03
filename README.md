@@ -1,10 +1,16 @@
 # Mykeyboard — Split Ergo Keyboard
 
-Teclado ergonómico split de diseño propio. Proyecto de hardware abierto: esquemáticos y PCB en KiCad, firmware en QMK/ZMK, y carcasa imprimible en 3D.
+Teclado ergonómico split de diseño propio. Proyecto de hardware abierto: esquemáticos y PCB en KiCad, firmware en QMK, y carcasa imprimible en 3D.
+
+## Layout
+
+Split columnar-stagger ISO-ES (español completo: Ñ, Ç, ‡, ¡, ¿), ~38 teclas por mitad, espacio dividido y flechas dedicadas.
+
+![Layout del teclado](docs/keyboard-layout.png)
 
 ## Estado
 
-En desarrollo inicial. Estructura del proyecto montada, KiCad pendiente de instalar.
+En desarrollo. Estructura del proyecto montada, KiCad 10.0.6 instalado, requisitos y layout definidos.
 
 ## Estructura del proyecto
 
@@ -14,22 +20,26 @@ Mykeyboard/
 │   ├── left/          # Mitad izquierda (esquemático + PCB)
 │   ├── right/         # Mitad derecha (espejo de la izquierda)
 │   └── shared/        # Librerías, símbolos, footprints y plantillas comunes
-├── firmware/          # Firmware del teclado (QMK o ZMK)
+├── firmware/          # Firmware del teclado (QMK)
 ├── case/              # Carcasa imprimible en 3D (STL / FreeCAD)
-├── docs/              # Documentación: guía de montaje, BOM, decisiones
+├── docs/              # Documentación: requisitos, layout, BOM, decisiones
 ├── tools/             # Scripts de utilidad (generación, automatización)
 └── README.md
 ```
 
 ## Hardware
 
-- **KiCad**: versión 10.x (esquemático y PCB).
-- **Layout**: split ergonómico (a definir: columnar stagger, thumb clusters, número de teclas).
-- **Conexión entre mitades**: a decidir (TRRS, inalámbrico, etc.).
+- **KiCad**: 10.0.6 (esquemático y PCB).
+- **Layout**: split columnar-stagger ISO-ES, ~37-38 teclas por mitad, placa única que se parte en dos (V-cut/mouse bites).
+- **Controlador**: RP2040-Zero por mitad, conectadas por TRRS.
+- **Switches**: Outemu Silent Lemon V3 (táctiles silenciosos), soldados.
+- **Pantalla**: OLED 128x32 (I2C) en la mitad master.
+- **Extras**: encoder rotatorio EC11 (volumen/medios), hub USB (puerto ratón/pendrive) en la mitad master.
+- Ver [docs/requirements.md](docs/requirements.md), [docs/layout.md](docs/layout.md) y el [BOM](docs/bom.md).
 
 ## Firmware
 
-Pendiente de elegir: QMK o ZMK (depende de si el teclado es cableado o inalámbrico).
+QMK (cableado).
 
 ## Cómo contribuir / desarrollo
 
