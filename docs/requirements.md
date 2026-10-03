@@ -29,6 +29,10 @@ Objetivo: teclado ergonómico split de diseño propio. Requisitos recogidos del 
 - **OLED 128x32** (I2C) en la mitad master. Muestra capa, mayúsculas, WPM, etc. (decisión revisada 2026-10-02: se recupera el OLED en vez de LEDs).
 - Conecta por I2C (GND, VCC, SDA, SCL) — 2 pines GPIO + alimentación.
 
+## Control de medios
+- **Encoder rotatorio EC11** en la mitad master: girar = subir/bajar volumen, pulsar = pausar/continuar, y función "siguiente" (configurable en firmware).
+- Conecta al RP2040-Zero por 2 pines (A/B de rotación) + 1 pin (pulsador).
+
 ## Conectividad
 - **Cableado** (USB). Se descarta inalámbrico/Bluetooth (decisión 2026-10-02).
 - **Hub USB integrado**: el teclado debe tener al menos un puerto USB extra para conectar periféricos (ratón, pendrive, etc.). Implica un chip hub USB en el diseño.
