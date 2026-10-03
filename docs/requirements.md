@@ -3,11 +3,12 @@
 Objetivo: teclado ergonómico split de diseño propio. Requisitos recogidos del usuario (2026-10-02).
 
 ## Layout
-- Split ergonómico.
-- Layout "común"/estándar: que tenga la mayoría de teclas.
+- Split ergonómico en una sola placa (un solo PCB, un solo controlador).
+- **TKL (87 teclas)**: todas las teclas del G513 Carbon menos el numpad. Incluye `/ * - +` (ya en el bloque principal).
 - Fila de números completa (1-9, 0).
-- **Layout ISO** (por la tecla Ñ, imprescindible).
-- Pendiente de definir: tamaño exacto, columnar stagger, thumb clusters, número total de teclas.
+- F1-F12.
+- **Layout ISO-ES** completo: Ñ, tilde (´), diéresis (¨), ç/Ç, grave (`), circunflejo (^).
+- Pendiente de definir: columnar stagger, thumb clusters, distribución tecla a tecla exacta.
 
 ## Teclas imprescindibles
 - Tab
