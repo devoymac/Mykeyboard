@@ -6,6 +6,8 @@
 *.kicad_ps
 *.kicad_pcb-bak*
 *.kicad_sch-bak*
+*.lck
+.history/
 __pycache__/
 *.pyc
 
