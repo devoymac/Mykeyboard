@@ -23,8 +23,9 @@ Objetivo: teclado ergonómico split de diseño propio. Requisitos recogidos del 
 - Imprimir pantalla (PrtSc) — para capturas
 - Ñ (imprescindible)
 
-## Pantalla
-- OLED **128x32** (I2C). Suficiente para capa, mayúsculas, WPM, etc.
+## Pantalla / Indicadores
+- **LEDs indicadores de capa** (2-3 LEDs) para saber en qué capa se está. Sustituye al OLED para reducir costes (decisión 2026-10-02).
+- OLED 128x32 (I2C) queda como **opcional/mejora futura** (mismo I2C, añadible después).
 
 ## Conectividad
 - **Cableado** (USB). Se descarta inalámbrico/Bluetooth (decisión 2026-10-02).
