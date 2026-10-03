@@ -12,12 +12,12 @@ Objetivo: teclado ergonómico split de diseño propio. Requisitos recogidos del 
 - Pantalla integrada (screen). Típicamente OLED 128x32 o 128x64 en teclados split.
 
 ## Conectividad
-- **Dual**: inalámbrico (Bluetooth) Y cableado (USB). Implica elegir controlador que soporte ambos (p. ej. nice!nano / nRF52840) y firmware ZMK.
+- **Cableado** (USB). Se descarta inalámbrico/Bluetooth (decisión 2026-10-02).
 - Al menos un puerto USB en el teclado.
 - Poder conectar 1-2 dispositivos USB a través del teclado (requiere hub USB integrado).
 
 ## Implicaciones técnicas (a decidir)
-- **Controlador**: para dual BT+cable, un nRF52840 (nice!nano) es la opción habitual; un Pro Micro/Elite-C solo da cableado.
-- **Firmware**: ZMK (inalámbrico) vs QMK (cableado). Si se quiere dual, ZMK es la vía natural.
+- **Controlador**: al ser cableado, un Pro Micro / Elite-C (ATmega32U4) o RP2040 es suficiente. No hace falta nRF52840.
+- **Firmware**: QMK (cableado) es la vía natural.
 - **Hub USB**: conectar 1-2 dispositivos USB por el teclado añade un chip hub USB y complejidad de diseño.
-- **Batería**: si es inalámbrico, hay que integrar batería LiPo y carga.
+- **Sin batería**: al ser cableado, no hay que integrar LiPo ni carga.
