@@ -12,7 +12,7 @@ Top:        Q     W     E     R     T
 Home:       A     S     D     F     G
 Inferior:   Z     X     C     V     B
 Modific.:   Tab   Caps  Shift Ctrl  Win   Alt
-Pulgar:              [Espacio  L1  L2  AltGr]
+Pulgar:              [Espacio  AltGr  Fn  Menú]
 Nav:        Home  PgUp  PgDn  Del   End   Ins   PrtSc
 ```
 
@@ -23,8 +23,8 @@ Conteo: F(6) + Números(6) + Top(5) + Home(5) + Inferior(5) + Mod(6) + Pulgar(4)
 ```
 Fila F:     F7    F8    F9    F10   F11   F12
 Números:    7     8     9     0     -     =
-Top:        Y     U     I     O     P     ´
-Home:       H     J     K     L     Ñ     ç
+Top:        Y     U     I     O     P
+Home:       H     J     K     L     Ñ     ´     ç
 Inferior:   N     M     ,     .     /
 Modific.:   Enter Bcksp RShift RCtrl Menu  RAlt
 Pulgar:              [Espacio   Fn]
@@ -32,7 +32,7 @@ Flechas:    ←     ↓     ↑     →
 Nav:        Supr  Fin   Inicio
 ```
 
-Conteo: F(6) + Números(6) + Top(6) + Home(6) + Inferior(5) + Mod(6) + Pulgar(2) + Flechas(4) + Nav(3) = 44
+Conteo: F(6) + Números(6) + Top(5) + Home(7) + Inferior(5) + Mod(6) + Pulgar(2) + Flechas(4) + Nav(3) = 44
 
 ## Notas
 - La **tilde (´)**, **ç**, **grave (`)**, **circunflejo (^)** y sus variantes Shift van en las teclas ISO-ES de la fila Top/Home derecha.
