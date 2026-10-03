@@ -1,7 +1,7 @@
 # Layout del teclado
 
-78 teclas totales = 37 (izquierda) + 41 (derecha). Split ISO-ES, placa única que se parte en dos mitades.
-El clúster de navegación (PrtSc, ScrLk, Pause, Ins, Home, PgUp, Del, End, PgDn) va en **capas** y se muestra en el OLED.
+74 teclas totales = 37 por mitad (simétrico). Split ISO-ES, placa única que se parte en dos mitades.
+El clúster de navegación (PrtSc, ScrLk, Pause, Ins, Home, PgUp, Del, End, PgDn) y las **flechas** van en **capas** y se muestran en el OLED.
 
 ## MITAD IZQUIERDA (37 teclas) — Master (RP2040-Zero + OLED + encoder + hub USB + TRRS)
 
@@ -17,7 +17,7 @@ Pulgar:              [Espacio  AltGr  Fn  Menú]
 
 Conteo: F(6) + Números(6) + Top(5) + Home(5) + Inferior(5) + Mod(6) + Pulgar(4) = 37
 
-## MITAD DERECHA (41 teclas) — Slave (RP2040-Zero + TRRS)
+## MITAD DERECHA (37 teclas) — Slave (RP2040-Zero + TRRS)
 
 ```
 Fila F:     F7    F8    F9    F10   F11   F12
@@ -27,10 +27,9 @@ Home:       H     J     K     L     Ñ     ´     ç
 Inferior:   N     M     ,     .     /
 Modific.:   Enter Bcksp RShift RCtrl Menu  RAlt
 Pulgar:              [Espacio   Fn]
-Flechas:    ←     ↓     ↑     →
 ```
 
-Conteo: F(6) + Números(6) + Top(5) + Home(7) + Inferior(5) + Mod(6) + Pulgar(2) + Flechas(4) = 41
+Conteo: F(6) + Números(6) + Top(5) + Home(7) + Inferior(5) + Mod(6) + Pulgar(2) = 37
 
 ## Notas
 - La **tilde (´)**, **ç**, **grave (`)**, **circunflejo (^)** y sus variantes Shift van en las teclas ISO-ES de la fila Top/Home derecha.
