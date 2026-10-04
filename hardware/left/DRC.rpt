@@ -1,0 +1,122 @@
+** Drc report for Mykeyboard_left.kicad_pcb **
+** Created on 2026-10-04T22:18:38 **
+** Report includes: Errors, Warnings **
+
+** Found 24 DRC violations **
+[invalid_outline]: La placa tiene un contorno mal formado (no se han encontrado bordes en la capa Edge.Cuts)
+    Local override; error
+    @(0.0000 mm, 0.0000 mm): PCB
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(189.2500 mm, 75.5675 mm): Pad PTH 8 [/colum 1] de U1
+    @(189.2500 mm, 75.5675 mm): Vía [/colum 1] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(65.4500 mm, 111.9975 mm): Vía [/row 3] en F.Cu - B.Cu
+    @(65.4500 mm, 111.9975 mm): Pad PTH 1 [/row 3] de D26
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(189.2500 mm, 57.7875 mm): Vía [/row 0] en F.Cu - B.Cu
+    @(189.2500 mm, 57.7875 mm): Pad PTH 1 [/row 0] de U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(160.6225 mm, 59.5775 mm): Pad PTH 1 [/row 0] de D7
+    @(160.6225 mm, 59.5775 mm): Vía [/row 0] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(84.4225 mm, 50.0525 mm): Vía [/row 0] en F.Cu - B.Cu
+    @(84.4225 mm, 50.0525 mm): Pad PTH 1 [/row 0] de D2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(58.4000 mm, 122.0725 mm): Pad PTH 2 [Net-(D33-A)] de S33
+    @(58.4000 mm, 122.0725 mm): Vía [Net-(D33-A)] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(141.7500 mm, 130.4000 mm): Pad PTH 1 [/row 4] de D34
+    @(141.7500 mm, 130.4000 mm): Vía [/row 4] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(33.0000 mm, 124.6125 mm): Pad PTH 1 [/colum 3] de S32
+    @(33.0000 mm, 124.6125 mm): Vía [/colum 3] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(141.7500 mm, 130.4000 mm): Pad PTH 1 [/row 4] de D34
+    @(141.7500 mm, 130.4000 mm): Vía [/row 4] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(65.4500 mm, 111.9975 mm): Vía [/row 3] en F.Cu - B.Cu
+    @(65.4500 mm, 111.9975 mm): Pad PTH 1 [/row 3] de D26
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(84.4225 mm, 50.0525 mm): Vía [/row 0] en F.Cu - B.Cu
+    @(84.4225 mm, 50.0525 mm): Pad PTH 1 [/row 0] de D2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(160.6225 mm, 59.5775 mm): Pad PTH 1 [/row 0] de D7
+    @(160.6225 mm, 59.5775 mm): Vía [/row 0] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(189.2500 mm, 75.5675 mm): Pad PTH 8 [/colum 1] de U1
+    @(189.2500 mm, 75.5675 mm): Vía [/colum 1] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(189.2500 mm, 57.7875 mm): Vía [/row 0] en F.Cu - B.Cu
+    @(189.2500 mm, 57.7875 mm): Pad PTH 1 [/row 0] de U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(58.4000 mm, 122.0725 mm): Pad PTH 2 [Net-(D33-A)] de S33
+    @(58.4000 mm, 122.0725 mm): Vía [Net-(D33-A)] en F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(33.0000 mm, 124.6125 mm): Pad PTH 1 [/colum 3] de S32
+    @(33.0000 mm, 124.6125 mm): Vía [/colum 3] en F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(115.6473 mm, 82.0650 mm): Pista [/colum 2] en (B.Cu), longitud 59.5663 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(171.3318 mm, 86.5125 mm): Pista [/colum 5] en (B.Cu), longitud 6.2897 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(179.0900 mm, 71.0532 mm): Pista [/colum 6] en (B.Cu), longitud 5.6043 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(187.7774 mm, 82.0650 mm): Pista [/row 2] en (B.Cu), longitud 4.4160 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(189.2500 mm, 57.7875 mm): Vía [/row 0] en F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(58.4000 mm, 122.0725 mm): Vía [Net-(D33-A)] en F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(33.0000 mm, 124.6125 mm): Vía [/colum 3] en F.Cu - B.Cu
+
+** Found 4 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(187.7774 mm, 82.0650 mm): Pista [/row 2] en (B.Cu), longitud 4.4160 mm
+    @(189.2500 mm, 62.8675 mm): Pad PTH 3 [/row 2] de U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(115.6473 mm, 82.0650 mm): Pista [/colum 2] en (B.Cu), longitud 59.5663 mm
+    @(189.2500 mm, 78.1075 mm): Pad PTH 9 [/colum 2] de U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(181.6300 mm, 78.1075 mm): Pad PTH 12 [/colum 5] de U1
+    @(171.3318 mm, 86.5125 mm): Pista [/colum 5] en (B.Cu), longitud 6.2897 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(179.0900 mm, 78.1075 mm): Pad PTH 13 [/colum 6] de U1
+    @(179.0900 mm, 71.0532 mm): Pista [/colum 6] en (B.Cu), longitud 5.6043 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

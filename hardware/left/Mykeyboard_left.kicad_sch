@@ -5,6 +5,235 @@
 	(uuid "080b4066-77db-45c0-ac5a-5ec52c25c9d8")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Audio:AudioJack4"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AudioJack4"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Audio Jack, 4 Poles (TRRS)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle stereo headphones TRRS connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jack*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AudioJack4_0_1"
+				(rectangle
+					(start -6.35 -5.08)
+					(end -7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 -5.08) (xy -5.08 -5.715) (xy -4.445 -5.08) (xy -4.445 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 3.81)
+					(end -6.35 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy -2.54 0) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AudioJack4_1_1"
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ScottoKeebs:MCU_RP2040_Zero"
 			(pin_names
 				(offset 1.016)
@@ -1007,9 +1236,1781 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 111.76 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "086f39a4-28ef-4238-a683-767f69207db8")
+	)
+	(junction
+		(at 106.68 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "099d2ee6-d060-4966-91ea-ea540102dd1a")
+	)
+	(junction
+		(at 104.14 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cf3c153-9f60-4aa9-b0bf-90bae19db337")
+	)
+	(junction
+		(at 74.93 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d832963-1bea-411e-bb05-8e780c1480a0")
+	)
+	(junction
+		(at 106.68 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "135ea4b1-ba54-474e-81ff-994f63079018")
+	)
+	(junction
+		(at 99.06 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13ecb078-21a1-4f56-8e97-148a4bb06efa")
+	)
+	(junction
+		(at 104.14 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14ee14ce-863e-44ff-9441-026895d7ecca")
+	)
+	(junction
+		(at 82.55 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1902e860-0611-459d-9320-93fda970efd2")
+	)
+	(junction
+		(at 85.09 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ee0c1c9-dc34-413d-9ca8-250cabf9f871")
+	)
+	(junction
+		(at 111.76 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2051b171-0502-46e7-a0ac-0d6e3ef852b0")
+	)
+	(junction
+		(at 106.68 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27746daa-989a-4afc-b96c-9834984db58f")
+	)
+	(junction
+		(at 90.17 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "280580ea-af62-48ac-8c6d-a10e659d8bc2")
+	)
+	(junction
+		(at 90.17 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28793bd5-c3dc-44f4-ae6c-8e8301169e85")
+	)
+	(junction
+		(at 104.14 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31b7eb00-9442-4c67-b8dd-28fc850fe013")
+	)
+	(junction
+		(at 77.47 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37653097-f976-4cf7-b591-9b812f827c6b")
+	)
+	(junction
+		(at 99.06 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c552fea-b0cd-4a10-9af2-64cfb348f9b1")
+	)
+	(junction
+		(at 99.06 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49f7f117-4991-4039-a9f3-2eca090b5c69")
+	)
+	(junction
+		(at 96.52 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5684aa47-8685-4e8e-87b8-adcc332c3bea")
+	)
+	(junction
+		(at 104.14 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a0f1c2e-39f0-4ddf-8f59-43ef5e8d83f8")
+	)
+	(junction
+		(at 69.85 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ac8bf88-f6b1-4f7b-8201-e848dd0206b6")
+	)
+	(junction
+		(at 74.93 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bca6963-ffbe-49b5-be67-1328da557850")
+	)
+	(junction
+		(at 91.44 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62c5fc3d-e5d1-40ca-bbbd-a4ca523223c6")
+	)
+	(junction
+		(at 69.85 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "652494d3-e7ea-49ac-9417-df9d76f99083")
+	)
+	(junction
+		(at 74.93 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6715e47e-1702-47bf-afde-1e64dcb60ed7")
+	)
+	(junction
+		(at 77.47 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bd75a68-0f42-41c3-a96f-3a6552e1a5e8")
+	)
+	(junction
+		(at 111.76 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "701f4a27-29f2-4d86-8ff6-3c1f8f36bdcd")
+	)
+	(junction
+		(at 91.44 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c3d6ed6-494c-41f6-82b9-2dfb1c545a4d")
+	)
+	(junction
+		(at 90.17 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f37ac74-d7a6-4f81-80d6-68acc82d203b")
+	)
+	(junction
+		(at 82.55 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fa735c7-5b2c-463b-9484-99e0224589c8")
+	)
+	(junction
+		(at 85.09 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80255236-206e-44ae-801a-24177b1a62e3")
+	)
+	(junction
+		(at 82.55 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87de7f26-bc13-47d5-bf5b-070b22242155")
+	)
+	(junction
+		(at 85.09 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b430982-55f9-48b5-99ff-f6e1499983b0")
+	)
+	(junction
+		(at 96.52 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c3fa7ab-bf66-4085-b183-44712880ecae")
+	)
+	(junction
+		(at 69.85 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91d1c248-0332-4023-b8cf-842e944219e1")
+	)
+	(junction
+		(at 106.68 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95c1835d-bf06-4339-90da-8b6b2176f03b")
+	)
+	(junction
+		(at 74.93 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0fed10e-a10a-433d-af52-cf23e19ffd77")
+	)
+	(junction
+		(at 69.85 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6c6a314-fa78-48de-b135-586aa6827f34")
+	)
+	(junction
+		(at 62.23 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9fa300f-c70d-4559-89f2-68dc06913852")
+	)
+	(junction
+		(at 82.55 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aac4ca66-cb7f-41ff-b7ad-844cdc14f145")
+	)
+	(junction
+		(at 111.76 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad639dce-fc43-417f-9f22-5c74e311463f")
+	)
+	(junction
+		(at 74.93 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae8f5f7a-bc7f-47d2-8092-61b727de0fb4")
+	)
+	(junction
+		(at 91.44 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aec7287b-8e16-457d-89ab-51a83636655e")
+	)
+	(junction
+		(at 99.06 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b04dc065-f945-4ff7-9fa0-14b705f80ddd")
+	)
+	(junction
+		(at 111.76 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0647500-e727-40ad-93ce-3dad7a8b3b47")
+	)
+	(junction
+		(at 104.14 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1ed372f-d266-433a-baec-df9d3253ab0f")
+	)
+	(junction
+		(at 85.09 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b45354e6-2c6f-4053-ae06-9ecc9533a26d")
+	)
+	(junction
+		(at 62.23 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8e54300-ab77-455a-8be2-aad3b4f0ff60")
+	)
+	(junction
+		(at 106.68 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc3cdfe0-efc4-4f49-a8d6-e1d1114ed57b")
+	)
+	(junction
+		(at 77.47 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be299040-7c73-46b4-8c60-e86ccd65a6cb")
+	)
+	(junction
+		(at 77.47 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be6eba91-a738-4170-9d05-c4a1d84a91d7")
+	)
+	(junction
+		(at 99.06 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c337febb-236a-420f-bb16-4e84dd33c26b")
+	)
+	(junction
+		(at 85.09 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c752b28a-024a-4e9a-bda6-e648bc375760")
+	)
+	(junction
+		(at 91.44 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc3d8ad3-2b0d-4d38-b61b-4086e2d61418")
+	)
+	(junction
+		(at 111.76 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf785445-d443-478e-b688-c3be8d7c3814")
+	)
+	(junction
+		(at 104.14 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2d97fef-82e2-4a8d-ab8f-294cd6ffdc6b")
+	)
+	(junction
+		(at 90.17 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7f452ae-6baa-4c4a-be9c-5ac03a662868")
+	)
+	(junction
+		(at 82.55 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8415061-aff2-4664-a64f-bff96f11bdfd")
+	)
+	(junction
+		(at 124.46 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dca60cb0-dbb9-4148-a735-9949a131abf1")
+	)
+	(junction
+		(at 62.23 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd9e1767-6d67-4039-b55d-b7f234251c7a")
+	)
+	(junction
+		(at 96.52 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e50bdf76-0775-46fa-9b38-eaa647613a3d")
+	)
+	(junction
+		(at 96.52 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6c76a9f-6c5d-48c5-8520-3463d0d3cfb1")
+	)
+	(junction
+		(at 91.44 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e800dc66-1397-498f-b9a4-e705bdcd6c8b")
+	)
+	(junction
+		(at 62.23 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f48e0714-5f48-429e-9dfe-2adaaf383947")
+	)
+	(junction
+		(at 90.17 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7cc3fff-0696-49c6-b435-a1492fa81040")
+	)
+	(junction
+		(at 125.73 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f99e30aa-5ae1-4a74-bd3e-087202640e97")
+	)
+	(junction
+		(at 96.52 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "faf15842-afc0-47e6-b5f2-192937be19d9")
+	)
+	(junction
+		(at 96.52 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff82fbb3-bcb8-4eac-81ac-70c1054207e9")
+	)
+	(wire
+		(pts
+			(xy 90.17 138.43) (xy 96.52 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0115a023-4d9b-4e18-b2cf-998e54fc5f56")
+	)
+	(wire
+		(pts
+			(xy 125.73 104.14) (xy 125.73 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "020e1c9a-07ac-4952-9e2e-22ba930e1c54")
+	)
+	(wire
+		(pts
+			(xy 152.4 93.98) (xy 152.4 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03e7ec03-45d9-4dbc-a8f1-037546b36d83")
+	)
+	(wire
+		(pts
+			(xy 134.62 105.41) (xy 124.46 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03fd48a8-a96b-4f7f-ba8e-dfd18d9ae7e5")
+	)
+	(wire
+		(pts
+			(xy 163.83 134.62) (xy 125.73 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05d15129-b1ea-4bef-8e86-5c6f7ae19151")
+	)
+	(wire
+		(pts
+			(xy 74.93 125.73) (xy 82.55 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0884c206-de58-4072-af47-c34d7300c73b")
+	)
+	(wire
+		(pts
+			(xy 111.76 138.43) (xy 116.84 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ac932ad-8829-4320-8806-70d7dc9e965d")
+	)
+	(wire
+		(pts
+			(xy 104.14 138.43) (xy 111.76 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b41d88b-97a9-4361-ac95-78818a88663a")
+	)
+	(wire
+		(pts
+			(xy 67.31 76.2) (xy 74.93 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a68624-4af6-4073-8e0f-8605634d5794")
+	)
+	(wire
+		(pts
+			(xy 91.44 58.42) (xy 91.44 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10cd469c-d408-45dc-a9c1-acc3eb93aebb")
+	)
+	(wire
+		(pts
+			(xy 62.23 78.74) (xy 62.23 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112db1a2-d7e4-4a79-b21e-cb7fc123754d")
+	)
+	(wire
+		(pts
+			(xy 124.46 68.58) (xy 134.62 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "133cc599-f5f8-401d-bfd7-a8ff88c8cb1d")
+	)
+	(wire
+		(pts
+			(xy 99.06 58.42) (xy 99.06 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1de49693-abac-42c2-93f3-5cec677e4b9b")
+	)
+	(wire
+		(pts
+			(xy 99.06 104.14) (xy 99.06 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e4e56d7-5a82-406b-854b-021e50b3deb2")
+	)
+	(wire
+		(pts
+			(xy 162.56 76.2) (xy 160.02 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3f80e6-36a7-4105-a6fa-78d5c82f0798")
+	)
+	(wire
+		(pts
+			(xy 62.23 104.14) (xy 62.23 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "256c6dc2-8963-4aa7-87c7-fad74b95f694")
+	)
+	(wire
+		(pts
+			(xy 69.85 91.44) (xy 69.85 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "275880bf-c357-4fcc-8854-d39d64502be4")
+	)
+	(wire
+		(pts
+			(xy 96.52 101.6) (xy 104.14 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f2952d5-0eec-4b71-9e6a-f01230f786e4")
+	)
+	(wire
+		(pts
+			(xy 111.76 76.2) (xy 116.84 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ffac588-934e-4d64-83b3-dcf701874750")
+	)
+	(wire
+		(pts
+			(xy 163.83 132.08) (xy 124.46 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3129f064-7676-47f5-849e-4882592b55c6")
+	)
+	(wire
+		(pts
+			(xy 106.68 91.44) (xy 106.68 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3274ae48-5ef4-47a7-aeeb-4b3aaf65548c")
+	)
+	(wire
+		(pts
+			(xy 91.44 115.57) (xy 91.44 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35bd268d-ac77-4414-b802-0ca66600d001")
+	)
+	(wire
+		(pts
+			(xy 96.52 88.9) (xy 104.14 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3789c363-20be-4ea0-8632-4400c19bf2e2")
+	)
+	(wire
+		(pts
+			(xy 149.86 93.98) (xy 149.86 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37cbe0eb-0dd1-447d-8b18-5602d880394f")
+	)
+	(wire
+		(pts
+			(xy 62.23 66.04) (xy 62.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f769d01-f5af-4343-badf-ec26aa920d55")
+	)
+	(wire
+		(pts
+			(xy 85.09 66.04) (xy 85.09 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "401c2871-5504-4da0-9526-2e2ddfc09707")
+	)
+	(wire
+		(pts
+			(xy 85.09 91.44) (xy 85.09 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41eebb1a-8d16-462f-923a-5cf16645a955")
+	)
+	(wire
+		(pts
+			(xy 134.62 105.41) (xy 134.62 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42867edf-3401-41e3-8dd5-bc062d393e01")
+	)
+	(wire
+		(pts
+			(xy 67.31 125.73) (xy 74.93 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45513281-2cbc-480b-b9c9-b40d116d78df")
+	)
+	(wire
+		(pts
+			(xy 74.93 88.9) (xy 82.55 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49ae55f6-6730-4e67-9bfd-06145b72d10c")
+	)
+	(wire
+		(pts
+			(xy 77.47 78.74) (xy 77.47 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bbd2bd2-d97c-4e23-81a0-d83887646860")
+	)
+	(wire
+		(pts
+			(xy 124.46 105.41) (xy 124.46 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c317913-aba1-449b-ab9e-6072af180655")
+	)
+	(wire
+		(pts
+			(xy 162.56 81.28) (xy 160.02 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dcabb85-70c8-431b-baa9-d53923887a10")
+	)
+	(wire
+		(pts
+			(xy 106.68 104.14) (xy 106.68 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f9062d-ce93-4945-9e01-5511b1a3d7bc")
+	)
+	(wire
+		(pts
+			(xy 67.31 88.9) (xy 74.93 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "541cf178-77a6-457f-9c63-a6bd991f622c")
+	)
+	(wire
+		(pts
+			(xy 162.56 66.04) (xy 160.02 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ed6863-0efc-452c-a1ad-81b6010f0515")
+	)
+	(wire
+		(pts
+			(xy 91.44 91.44) (xy 91.44 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56cbe838-b067-4d32-b7bb-1b4cffeffac5")
+	)
+	(wire
+		(pts
+			(xy 99.06 66.04) (xy 99.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cdfeeae-72b4-4c00-b00e-18a6e03bee41")
+	)
+	(wire
+		(pts
+			(xy 69.85 58.42) (xy 69.85 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d46f8b7-4d04-47cb-9b13-00481cfb807a")
+	)
+	(wire
+		(pts
+			(xy 82.55 76.2) (xy 90.17 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5db44615-713d-4e2f-a701-e8c2353091e5")
+	)
+	(wire
+		(pts
+			(xy 139.7 102.87) (xy 134.62 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e866c15-bac0-4b65-bc8a-a0118f64df8c")
+	)
+	(wire
+		(pts
+			(xy 111.76 101.6) (xy 116.84 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64eb9d71-1678-46da-b705-43749bbe990c")
+	)
+	(wire
+		(pts
+			(xy 106.68 78.74) (xy 106.68 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69afff60-675b-4293-aed6-aaa12e2737ad")
+	)
+	(wire
+		(pts
+			(xy 96.52 138.43) (xy 104.14 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ae41e28-ea93-4394-afce-4e24d5019028")
+	)
+	(wire
+		(pts
+			(xy 162.56 71.12) (xy 160.02 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71ff4a2c-3f50-475f-b290-ae4f4866c3e9")
+	)
+	(wire
+		(pts
+			(xy 104.14 114.3) (xy 111.76 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7436a392-2877-4395-8453-e8468df08e69")
+	)
+	(wire
+		(pts
+			(xy 90.17 88.9) (xy 96.52 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74da4344-7788-4ffd-bbd3-b0c05356c781")
+	)
+	(wire
+		(pts
+			(xy 85.09 78.74) (xy 85.09 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "758ba1bd-6da4-4baf-ae29-81c1ffded4d0")
+	)
+	(wire
+		(pts
+			(xy 104.14 101.6) (xy 111.76 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7872f216-c14a-43cb-b655-07722a6c0c55")
+	)
+	(wire
+		(pts
+			(xy 106.68 66.04) (xy 106.68 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a1f1a5e-c156-4289-a8d1-3168bd1ccc51")
+	)
+	(wire
+		(pts
+			(xy 67.31 101.6) (xy 74.93 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c466b22-2a1b-4ee4-b7ed-74bdc01f0155")
+	)
+	(wire
+		(pts
+			(xy 162.56 78.74) (xy 160.02 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813064eb-f3d6-48b6-b4e4-527a36348550")
+	)
+	(wire
+		(pts
+			(xy 74.93 76.2) (xy 82.55 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85549b31-7b32-4810-b0ba-1b2f803be257")
+	)
+	(wire
+		(pts
+			(xy 62.23 58.42) (xy 62.23 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "869efda4-d0e1-4d2a-87ea-9937989359f4")
+	)
+	(wire
+		(pts
+			(xy 162.56 86.36) (xy 160.02 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86eab659-3833-4392-85b1-a30b83ed8def")
+	)
+	(wire
+		(pts
+			(xy 77.47 58.42) (xy 77.47 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ad7864-defc-4e9f-87b1-d7c54cbc7b5e")
+	)
+	(wire
+		(pts
+			(xy 116.84 114.3) (xy 111.76 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ae3a52-6861-4cba-91aa-0807f9d2d8ef")
+	)
+	(wire
+		(pts
+			(xy 91.44 66.04) (xy 91.44 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a4f4328-1ea1-45c7-af09-fc866297295b")
+	)
+	(wire
+		(pts
+			(xy 134.62 86.36) (xy 134.62 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8edccdbe-4418-431f-b842-8dfb94111ad4")
+	)
+	(wire
+		(pts
+			(xy 124.46 132.08) (xy 124.46 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8faaf73e-c68f-4870-b21a-366c13882d3f")
+	)
+	(wire
+		(pts
+			(xy 62.23 91.44) (xy 62.23 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91ce69ce-423e-4dc7-afd4-4f079e9afe7d")
+	)
+	(wire
+		(pts
+			(xy 104.14 88.9) (xy 111.76 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93e9522c-4c1c-4460-9823-b3cc1b2894fd")
+	)
+	(wire
+		(pts
+			(xy 82.55 88.9) (xy 90.17 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9490735f-bd61-47d6-8bbb-7ceb408dea73")
+	)
+	(wire
+		(pts
+			(xy 67.31 114.3) (xy 74.93 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98b1f06e-c6a2-414f-9865-d68b340b8d36")
+	)
+	(wire
+		(pts
+			(xy 74.93 101.6) (xy 82.55 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9994d90a-80b8-42ce-a191-7d9300b7ab2b")
+	)
+	(wire
+		(pts
+			(xy 90.17 101.6) (xy 96.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a9d7c22-b972-4140-880b-401c3314dee2")
+	)
+	(wire
+		(pts
+			(xy 147.32 93.98) (xy 147.32 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c7b5a78-9d28-4c20-a647-d5c031bca306")
+	)
+	(wire
+		(pts
+			(xy 106.68 58.42) (xy 106.68 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d7ad72c-564a-4cac-9712-0d6d09f3bde5")
+	)
+	(wire
+		(pts
+			(xy 77.47 66.04) (xy 77.47 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a02eba88-6ef6-45d3-932f-d7ee1f53030e")
+	)
+	(wire
+		(pts
+			(xy 111.76 125.73) (xy 116.84 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1d56d7f-d68a-4038-bc9c-f39c4fecf1ab")
+	)
+	(wire
+		(pts
+			(xy 111.76 88.9) (xy 116.84 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21d597c-bfe2-4f21-b90a-f3c1a0737d4f")
+	)
+	(wire
+		(pts
+			(xy 85.09 58.42) (xy 85.09 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a92c7f39-da8b-4728-94e5-b42ad635e23d")
+	)
+	(wire
+		(pts
+			(xy 125.73 71.12) (xy 134.62 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac303495-8d6a-4b8e-8df5-0f73dcd6dc97")
+	)
+	(wire
+		(pts
+			(xy 90.17 114.3) (xy 96.52 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8edba27-e6d3-45f4-bb24-af32b935a761")
+	)
+	(wire
+		(pts
+			(xy 69.85 78.74) (xy 69.85 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc60054-a309-4ab0-8736-887dee102350")
+	)
+	(wire
+		(pts
+			(xy 90.17 125.73) (xy 96.52 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf593cc0-132d-4260-a920-d118dbafaca7")
+	)
+	(wire
+		(pts
+			(xy 69.85 104.14) (xy 69.85 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8cfc9e8-d5c7-4577-8e9b-908d60d572cf")
+	)
+	(wire
+		(pts
+			(xy 96.52 76.2) (xy 104.14 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c997840b-acf5-475b-a7e2-9e21c920b16e")
+	)
+	(wire
+		(pts
+			(xy 96.52 125.73) (xy 104.14 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce0bb290-e635-4bb7-91b0-b8c3447eeccb")
+	)
+	(wire
+		(pts
+			(xy 162.56 68.58) (xy 160.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceab5bf4-644b-413a-90b4-74ef977ed4bd")
+	)
+	(wire
+		(pts
+			(xy 99.06 78.74) (xy 99.06 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b9c8e5-996e-4e75-89a6-9047db60b1b2")
+	)
+	(wire
+		(pts
+			(xy 104.14 76.2) (xy 111.76 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3cf4bf7-c9c6-48c5-a4ae-bf2bf3e0a899")
+	)
+	(wire
+		(pts
+			(xy 99.06 91.44) (xy 99.06 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74cbe62-251d-44b0-ba75-2b5a97599151")
+	)
+	(wire
+		(pts
+			(xy 82.55 101.6) (xy 90.17 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9945aea-5cb2-4c86-938e-a6b04eb7d9bc")
+	)
+	(wire
+		(pts
+			(xy 162.56 73.66) (xy 160.02 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbb1de03-a3da-490a-9e94-5bd82903dc32")
+	)
+	(wire
+		(pts
+			(xy 144.78 93.98) (xy 144.78 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc4f7e2e-97fc-4612-847f-a1e7aa14cdd0")
+	)
+	(wire
+		(pts
+			(xy 142.24 91.44) (xy 142.24 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deda9252-123a-45b1-9552-f7919a95870f")
+	)
+	(wire
+		(pts
+			(xy 106.68 115.57) (xy 106.68 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df5c7180-1aa6-4369-b1f4-8784f58edf87")
+	)
+	(wire
+		(pts
+			(xy 69.85 66.04) (xy 69.85 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e03e8025-1bde-4a3a-9003-3e09a2acacb6")
+	)
+	(wire
+		(pts
+			(xy 82.55 114.3) (xy 90.17 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e23b32e9-3341-4869-bf64-430c6219ff3f")
+	)
+	(wire
+		(pts
+			(xy 125.73 104.14) (xy 137.16 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e458f9d3-58fc-4e6f-96ab-ab258921db79")
+	)
+	(wire
+		(pts
+			(xy 162.56 83.82) (xy 160.02 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb70c333-989c-4716-b652-f0a6872a3af7")
+	)
+	(wire
+		(pts
+			(xy 85.09 104.14) (xy 85.09 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece70bf1-d56f-4bef-98da-f01e2ec5190c")
+	)
+	(wire
+		(pts
+			(xy 85.09 115.57) (xy 85.09 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edafcc38-c82a-448f-9bb2-b8618e68951f")
+	)
+	(wire
+		(pts
+			(xy 91.44 104.14) (xy 91.44 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee35f913-66f6-489b-8741-2adfd8005bfe")
+	)
+	(wire
+		(pts
+			(xy 104.14 125.73) (xy 111.76 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0b14a29-032f-4614-937e-fe42e6032006")
+	)
+	(wire
+		(pts
+			(xy 74.93 114.3) (xy 82.55 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0b85505-811d-4299-ab89-d2452118b9ac")
+	)
+	(wire
+		(pts
+			(xy 90.17 76.2) (xy 96.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e865a0-dfaf-47ec-a3c9-bcc5b86d518e")
+	)
+	(wire
+		(pts
+			(xy 125.73 134.62) (xy 125.73 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f407d587-a566-46d8-aa0e-00f861b9bb73")
+	)
+	(wire
+		(pts
+			(xy 91.44 78.74) (xy 91.44 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4867391-3a5c-4e0c-89db-24dfb8432e29")
+	)
+	(wire
+		(pts
+			(xy 139.7 107.95) (xy 139.7 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f56250c8-fd16-4a2a-9c1f-f0ddfc45d87b")
+	)
+	(wire
+		(pts
+			(xy 137.16 107.95) (xy 137.16 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f84c0704-0e5a-48f1-9283-2d5bf3eaf12f")
+	)
+	(wire
+		(pts
+			(xy 99.06 115.57) (xy 99.06 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9ee1264-77f0-4ac0-b609-c554d5483ee3")
+	)
+	(wire
+		(pts
+			(xy 82.55 125.73) (xy 90.17 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faf59079-d4e0-4ee1-b541-36397408b8eb")
+	)
+	(wire
+		(pts
+			(xy 77.47 104.14) (xy 77.47 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbcb17e8-ed9b-4d61-a376-f69de573adec")
+	)
+	(wire
+		(pts
+			(xy 96.52 114.3) (xy 104.14 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe34718-7127-44ae-96b4-70da3a788996")
+	)
+	(wire
+		(pts
+			(xy 77.47 91.44) (xy 77.47 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fead05d3-5009-4e3f-a867-92895fc9b02c")
+	)
+	(label "row 3"
+		(at 162.56 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1369cff3-c2a2-4ff4-8f75-1b9b144527be")
+	)
+	(label "row 2"
+		(at 116.84 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "19bce484-1954-4c6a-afce-e60e589daed1")
+	)
+	(label "TX gp26"
+		(at 134.62 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b24d62e-8f5f-460a-b902-86fabc231b7b")
+	)
+	(label "colum 4"
+		(at 91.44 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e18c2e4-c98d-4488-9902-3a3e8045a541")
+	)
+	(label "RX gp27"
+		(at 134.62 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26595778-bb19-4584-a2e7-455f2a383793")
+	)
+	(label "colum 5"
+		(at 99.06 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49588ff2-6bb3-42b9-a526-990fc1934b42")
+	)
+	(label "colum 4"
+		(at 149.86 93.98 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56f11e42-d4c1-4a00-94fe-77f8823fdb75")
+	)
+	(label "colum 3"
+		(at 85.09 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "58cd99bc-4ae1-464c-b1ba-06809597cdbc")
+	)
+	(label "colum 0"
+		(at 62.23 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59d4211b-2f6e-448c-a3ca-7590fe627d2b")
+	)
+	(label "RX gp27"
+		(at 163.83 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cac9d4b-0a1d-4f0a-a187-b2720d84d39b")
+	)
+	(label "TX gp26"
+		(at 163.83 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6056acf9-c139-4786-8796-7eba0eed4dd2")
+	)
+	(label "row 4"
+		(at 162.56 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85087c9b-4da5-4153-bba4-11471029f034")
+	)
+	(label "colum 6"
+		(at 144.78 93.98 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8623d459-51af-4f44-b3a5-3b854314a846")
+	)
+	(label "colum 3"
+		(at 152.4 93.98 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a0610c3-0b42-4e6f-89f3-7b26a1609622")
+	)
+	(label "colum 2"
+		(at 77.47 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e9dc573-d641-488d-a11b-0ed688eb1558")
+	)
+	(label "row 2"
+		(at 162.56 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8eaaa1c8-865c-412e-ba82-131394452476")
+	)
+	(label "row 0"
+		(at 116.84 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "913af7b3-a6d1-4221-b197-3046d1829555")
+	)
+	(label "colum 1"
+		(at 162.56 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9aa50962-fe4c-4320-8a0b-895327b4eaf3")
+	)
+	(label "row 5"
+		(at 162.56 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1a5dc2b-5a2f-46f3-96e5-54fe08ff08af")
+	)
+	(label "row 0"
+		(at 162.56 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac980060-4256-45dc-afd4-434035490db4")
+	)
+	(label "colum 1"
+		(at 69.85 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b627b833-9648-4ca1-8c9a-7be98d25ca49")
+	)
+	(label "colum 2"
+		(at 162.56 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba0f245d-a269-4553-b942-b96ac1b9d975")
+	)
+	(label "row 1"
+		(at 116.84 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbf7cfe9-474c-4507-808d-fb8e831803be")
+	)
+	(label "row 3"
+		(at 116.84 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd261f01-c21d-4327-b682-80b5a5f10684")
+	)
+	(label "colum 5"
+		(at 147.32 93.98 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d07af26d-ab79-441c-ad90-5d8a1c31a38f")
+	)
+	(label "colum 6"
+		(at 106.68 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db21a0a9-081c-473e-932d-383572c4d1a5")
+	)
+	(label "row 4"
+		(at 116.84 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e31bd1d1-108f-49d1-9627-cadfd25d9f54")
+	)
+	(label "row 5"
+		(at 116.84 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eaeb7970-da15-4ae3-8391-ed94286ad8af")
+	)
+	(label "row 1"
+		(at 162.56 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2f1ea4f-7194-4460-a66e-5ba018401bf6")
+	)
+	(label "colum 0"
+		(at 162.56 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff71e622-8ef2-4106-a8f8-ad5520b951ed")
+	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 40.64 101.6 0)
+		(at 74.93 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1020,7 +3021,7 @@
 		(fields_autoplaced yes)
 		(uuid "00834367-1243-4944-890e-7b2b8dca3313")
 		(property "Reference" "D16"
-			(at 40.49 100.534 0)
+			(at 74.78 97.994 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1033,7 +3034,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 43.18 101.6 90)
+			(at 77.47 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1042,8 +3043,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 40.64 101.6 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 74.93 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1054,7 +3055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 101.6 90)
+			(at 74.93 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1065,7 +3066,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 101.6 90)
+			(at 78.74 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1082,7 +3083,7 @@
 			(uuid "fb23e481-3fb7-44c3-96cf-f73de59b18cb")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D16")
 					(unit 1)
@@ -1092,7 +3093,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 74.93 83.82 0)
+		(at 109.22 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1103,7 +3104,7 @@
 		(fields_autoplaced yes)
 		(uuid "0568c9a6-e0cc-4c44-b9d4-c1090d97699e")
 		(property "Reference" "S14"
-			(at 74.93 83.82 0)
+			(at 109.22 81.28 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1115,7 +3116,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 74.93 87.63 0)
+			(at 109.22 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1124,8 +3125,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 83.82 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 109.22 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1136,7 +3137,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 85.598 0)
+			(at 106.68 83.058 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1147,7 +3148,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 83.82 0)
+			(at 109.22 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1164,7 +3165,7 @@
 			(uuid "255ec39b-4277-4ac7-bb90-91ec6195005f")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S14")
 					(unit 1)
@@ -1174,7 +3175,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 55.88 101.6 0)
+		(at 90.17 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1185,7 +3186,7 @@
 		(fields_autoplaced yes)
 		(uuid "069720c2-9f2b-4042-a296-57cea338c7e7")
 		(property "Reference" "D18"
-			(at 55.73 100.534 0)
+			(at 90.02 97.994 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1198,7 +3199,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 58.42 101.6 90)
+			(at 92.71 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1207,8 +3208,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 55.88 101.6 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 90.17 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1219,7 +3220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 101.6 90)
+			(at 90.17 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1230,7 +3231,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 101.6 90)
+			(at 93.98 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1247,7 +3248,7 @@
 			(uuid "ac654287-fbd3-4ea0-81cc-b2f52dea6b7d")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D18")
 					(unit 1)
@@ -1257,7 +3258,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 53.34 109.22 0)
+		(at 87.63 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1268,7 +3269,7 @@
 		(fields_autoplaced yes)
 		(uuid "09a54176-a9f0-4182-b76f-59d039c5f47a")
 		(property "Reference" "S25"
-			(at 53.34 109.22 0)
+			(at 87.63 106.68 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1280,7 +3281,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 53.34 113.03 0)
+			(at 87.63 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1289,8 +3290,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 109.22 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 87.63 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1301,7 +3302,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 110.998 0)
+			(at 85.09 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1312,7 +3313,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 109.22 0)
+			(at 87.63 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1329,7 +3330,7 @@
 			(uuid "64845a9a-1fe3-4553-ad99-22e3bd43332b")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S25")
 					(unit 1)
@@ -1339,7 +3340,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 69.85 138.43 0)
+		(at 104.14 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1350,7 +3351,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b3d41e4-cdcf-48f8-9520-ac818d975071")
 		(property "Reference" "D38"
-			(at 69.7 137.364 0)
+			(at 103.99 134.824 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1363,7 +3364,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 72.39 138.43 90)
+			(at 106.68 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1372,8 +3373,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 69.85 138.43 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 104.14 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1384,7 +3385,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 138.43 90)
+			(at 104.14 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1395,7 +3396,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 138.43 90)
+			(at 107.95 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1412,7 +3413,7 @@
 			(uuid "1d6c6b33-c12e-43cd-9799-f2d247dc84dc")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D38")
 					(unit 1)
@@ -1422,7 +3423,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 59.69 109.22 0)
+		(at 93.98 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1433,7 +3434,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ca9d23c-5de5-48e8-b008-9ec11c18cc76")
 		(property "Reference" "S26"
-			(at 59.69 109.22 0)
+			(at 93.98 106.68 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1445,7 +3446,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 59.69 113.03 0)
+			(at 93.98 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1454,8 +3455,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 109.22 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 93.98 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1466,7 +3467,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 110.998 0)
+			(at 91.44 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1477,7 +3478,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 109.22 0)
+			(at 93.98 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1494,7 +3495,7 @@
 			(uuid "15342d61-8186-48e9-8b04-2dee1fc734af")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S26")
 					(unit 1)
@@ -1504,7 +3505,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 38.1 83.82 0)
+		(at 72.39 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1515,7 +3516,7 @@
 		(fields_autoplaced yes)
 		(uuid "13101609-d580-4c94-b736-56e2046f8da0")
 		(property "Reference" "S9"
-			(at 38.1 83.82 0)
+			(at 72.39 81.28 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1527,7 +3528,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 38.1 87.63 0)
+			(at 72.39 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1536,8 +3537,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 38.1 83.82 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 72.39 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1548,7 +3549,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 85.598 0)
+			(at 69.85 83.058 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1559,7 +3560,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 83.82 0)
+			(at 72.39 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1576,7 +3577,7 @@
 			(uuid "da38a9f4-ac81-4c7b-9988-bd065e48ee72")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S9")
 					(unit 1)
@@ -1586,7 +3587,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 30.48 71.12 0)
+		(at 64.77 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1597,7 +3598,7 @@
 		(fields_autoplaced yes)
 		(uuid "13321fcb-168f-49c1-99a9-fc78abb590d7")
 		(property "Reference" "S1"
-			(at 30.48 71.12 0)
+			(at 64.77 68.58 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1609,7 +3610,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 30.48 74.93 0)
+			(at 64.77 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1618,8 +3619,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 30.48 71.12 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 64.77 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1630,7 +3631,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 72.898 0)
+			(at 62.23 70.358 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1641,7 +3642,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 30.48 71.12 0)
+			(at 64.77 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1658,7 +3659,7 @@
 			(uuid "451ffde4-5b7b-4ebc-a74e-eccd3ad8a4de")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S1")
 					(unit 1)
@@ -1668,7 +3669,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 55.88 138.43 0)
+		(at 90.17 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1679,7 +3680,7 @@
 		(fields_autoplaced yes)
 		(uuid "157386e4-1ef4-4694-aec7-6d544bdb0a28")
 		(property "Reference" "D36"
-			(at 55.73 137.364 0)
+			(at 90.02 134.824 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1692,7 +3693,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 58.42 138.43 90)
+			(at 92.71 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1701,8 +3702,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 55.88 138.43 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 90.17 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1713,7 +3714,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 138.43 90)
+			(at 90.17 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1724,7 +3725,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 138.43 90)
+			(at 93.98 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1741,7 +3742,7 @@
 			(uuid "9341fb20-874e-4414-9bff-96d60641523d")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D36")
 					(unit 1)
@@ -1751,7 +3752,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 40.64 125.73 0)
+		(at 74.93 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1762,7 +3763,7 @@
 		(fields_autoplaced yes)
 		(uuid "16487a75-a427-4395-8a2f-a787cefa8553")
 		(property "Reference" "D30"
-			(at 40.49 124.664 0)
+			(at 74.78 122.124 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1775,7 +3776,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 43.18 125.73 90)
+			(at 77.47 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1784,8 +3785,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 40.64 125.73 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 74.93 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1796,7 +3797,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 125.73 90)
+			(at 74.93 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1807,7 +3808,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 125.73 90)
+			(at 78.74 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1824,7 +3825,7 @@
 			(uuid "79aff973-9e6d-4528-8dd0-19d034305ea6")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D30")
 					(unit 1)
@@ -1834,7 +3835,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 33.02 88.9 0)
+		(at 67.31 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1845,7 +3846,7 @@
 		(fields_autoplaced yes)
 		(uuid "18247ba0-a8af-4527-8c9b-8922d6bdaf08")
 		(property "Reference" "D8"
-			(at 32.87 87.834 0)
+			(at 67.16 85.294 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1858,7 +3859,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 35.56 88.9 90)
+			(at 69.85 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1867,8 +3868,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 33.02 88.9 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 67.31 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1879,7 +3880,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 88.9 90)
+			(at 67.31 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1890,7 +3891,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 88.9 90)
+			(at 71.12 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1907,7 +3908,7 @@
 			(uuid "3123e2e3-263d-4f2b-9d2e-9c742a3f9b55")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D8")
 					(unit 1)
@@ -1917,7 +3918,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 45.72 83.82 0)
+		(at 80.01 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1928,7 +3929,7 @@
 		(fields_autoplaced yes)
 		(uuid "1826c98e-5082-4e36-9ed9-f2387a42a03d")
 		(property "Reference" "S10"
-			(at 45.72 83.82 0)
+			(at 80.01 81.28 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1940,7 +3941,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 45.72 87.63 0)
+			(at 80.01 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1949,8 +3950,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 45.72 83.82 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 80.01 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1961,7 +3962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 85.598 0)
+			(at 77.47 83.058 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1972,7 +3973,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 83.82 0)
+			(at 80.01 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1989,7 +3990,7 @@
 			(uuid "c4a1fccf-3717-4c72-a161-c113cc181cf9")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S10")
 					(unit 1)
@@ -1999,7 +4000,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 40.64 114.3 0)
+		(at 74.93 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2010,7 +4011,7 @@
 		(fields_autoplaced yes)
 		(uuid "1859c7c6-e623-4d40-a950-4b4fd04ae668")
 		(property "Reference" "D23"
-			(at 40.49 113.234 0)
+			(at 74.78 110.694 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2023,7 +4024,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 43.18 114.3 90)
+			(at 77.47 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2032,8 +4033,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 40.64 114.3 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 74.93 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2044,7 +4045,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 114.3 90)
+			(at 74.93 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2055,7 +4056,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 114.3 90)
+			(at 78.74 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2072,7 +4073,7 @@
 			(uuid "b7f08298-454b-4bfb-90fa-ce4ae29cd620")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D23")
 					(unit 1)
@@ -2082,7 +4083,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 53.34 120.65 0)
+		(at 87.63 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2093,7 +4094,7 @@
 		(fields_autoplaced yes)
 		(uuid "189ae95d-ced4-439d-8122-b7932a80c5f2")
 		(property "Reference" "S32"
-			(at 53.34 120.65 0)
+			(at 87.63 118.11 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2105,7 +4106,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 53.34 124.46 0)
+			(at 87.63 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2114,8 +4115,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 120.65 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 87.63 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2126,7 +4127,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 122.428 0)
+			(at 85.09 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2137,7 +4138,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 120.65 0)
+			(at 87.63 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2154,7 +4155,7 @@
 			(uuid "112dc3d2-d288-4ac2-a1a6-ff4a6ab549bc")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S32")
 					(unit 1)
@@ -2164,7 +4165,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 55.88 125.73 0)
+		(at 90.17 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2175,7 +4176,7 @@
 		(fields_autoplaced yes)
 		(uuid "18f1cbc1-0109-40ec-9ee7-b39a90d3b43c")
 		(property "Reference" "D32"
-			(at 55.73 124.664 0)
+			(at 90.02 122.124 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2188,7 +4189,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 58.42 125.73 90)
+			(at 92.71 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2197,8 +4198,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 55.88 125.73 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 90.17 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2209,7 +4210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 125.73 90)
+			(at 90.17 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2220,7 +4221,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 125.73 90)
+			(at 93.98 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2237,7 +4238,7 @@
 			(uuid "e8192a8c-0240-4db1-a53d-c25f990ad21a")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D32")
 					(unit 1)
@@ -2247,7 +4248,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 48.26 125.73 0)
+		(at 82.55 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2258,7 +4259,7 @@
 		(fields_autoplaced yes)
 		(uuid "196d5643-4d2d-46fb-91aa-b057e2ba8861")
 		(property "Reference" "D31"
-			(at 48.11 124.664 0)
+			(at 82.4 122.124 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2271,7 +4272,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 50.8 125.73 90)
+			(at 85.09 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2280,8 +4281,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 48.26 125.73 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 82.55 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2292,7 +4293,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 125.73 90)
+			(at 82.55 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2303,7 +4304,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.07 125.73 90)
+			(at 86.36 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2320,7 +4321,7 @@
 			(uuid "513fe8ae-bdcf-4deb-b85b-05f07a66edb7")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D31")
 					(unit 1)
@@ -2330,7 +4331,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 67.31 83.82 0)
+		(at 101.6 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2341,7 +4342,7 @@
 		(fields_autoplaced yes)
 		(uuid "21c12e59-b3df-4dae-ba30-f7cf263394bb")
 		(property "Reference" "S13"
-			(at 67.31 83.82 0)
+			(at 101.6 81.28 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2353,7 +4354,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 87.63 0)
+			(at 101.6 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2362,8 +4363,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 83.82 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2374,7 +4375,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 85.598 0)
+			(at 99.06 83.058 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2385,7 +4386,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 83.82 0)
+			(at 101.6 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2402,7 +4403,7 @@
 			(uuid "64faa951-da9a-4661-bad3-cc1256a75f5a")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S13")
 					(unit 1)
@@ -2412,7 +4413,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 62.23 101.6 0)
+		(at 96.52 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2423,7 +4424,7 @@
 		(fields_autoplaced yes)
 		(uuid "25a9056a-a0b9-4bea-ba09-e55631d99e3f")
 		(property "Reference" "D19"
-			(at 62.08 100.534 0)
+			(at 96.37 97.994 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2436,7 +4437,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 64.77 101.6 90)
+			(at 99.06 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2445,8 +4446,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 62.23 101.6 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 96.52 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2457,7 +4458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 101.6 90)
+			(at 96.52 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2468,7 +4469,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 101.6 90)
+			(at 100.33 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2485,7 +4486,7 @@
 			(uuid "d4dbe109-abea-42a8-b462-ba9dee6fcae8")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D19")
 					(unit 1)
@@ -2495,7 +4496,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 69.85 76.2 0)
+		(at 104.14 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2506,7 +4507,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b68ea42-6465-4056-9a45-faa01225226c")
 		(property "Reference" "D6"
-			(at 69.7 75.134 0)
+			(at 103.99 72.594 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2519,7 +4520,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 72.39 76.2 90)
+			(at 106.68 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2528,8 +4529,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 69.85 76.2 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 104.14 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2540,7 +4541,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 76.2 90)
+			(at 104.14 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2551,7 +4552,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 76.2 90)
+			(at 107.95 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2568,7 +4569,7 @@
 			(uuid "06506d93-f626-4b6b-b6d0-78d5e9fffe6a")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D6")
 					(unit 1)
@@ -2578,7 +4579,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 33.02 101.6 0)
+		(at 67.31 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2589,7 +4590,7 @@
 		(fields_autoplaced yes)
 		(uuid "384f653b-154e-46b2-9127-589534247909")
 		(property "Reference" "D15"
-			(at 32.87 100.534 0)
+			(at 67.16 97.994 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2602,7 +4603,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 35.56 101.6 90)
+			(at 69.85 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2611,8 +4612,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 33.02 101.6 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 67.31 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2623,7 +4624,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 101.6 90)
+			(at 67.31 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2634,7 +4635,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 101.6 90)
+			(at 71.12 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2651,7 +4652,7 @@
 			(uuid "af432065-572d-47bc-bba0-f0176c91486b")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D15")
 					(unit 1)
@@ -2661,7 +4662,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 77.47 114.3 0)
+		(at 111.76 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2672,7 +4673,7 @@
 		(fields_autoplaced yes)
 		(uuid "38dce312-d867-4f3e-b3c3-8728626ea962")
 		(property "Reference" "D28"
-			(at 77.32 113.234 0)
+			(at 111.61 110.694 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2685,7 +4686,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 80.01 114.3 90)
+			(at 114.3 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2694,8 +4695,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 77.47 114.3 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 111.76 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2706,7 +4707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 114.3 90)
+			(at 111.76 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2717,7 +4718,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 114.3 90)
+			(at 115.57 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2734,7 +4735,7 @@
 			(uuid "48b7f121-86ca-449a-bb68-cb280278d337")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D28")
 					(unit 1)
@@ -2744,7 +4745,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 74.93 96.52 0)
+		(at 109.22 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2755,7 +4756,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d69fc98-90e5-4cfd-995a-7505fd06d629")
 		(property "Reference" "S21"
-			(at 74.93 96.52 0)
+			(at 109.22 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2767,7 +4768,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 74.93 100.33 0)
+			(at 109.22 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2776,8 +4777,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 96.52 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 109.22 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2788,7 +4789,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 98.298 0)
+			(at 106.68 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2799,7 +4800,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 96.52 0)
+			(at 109.22 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2816,7 +4817,7 @@
 			(uuid "410a371f-0426-4dad-8b05-80266dd2200d")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S21")
 					(unit 1)
@@ -2826,7 +4827,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 62.23 76.2 0)
+		(at 96.52 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2837,7 +4838,7 @@
 		(fields_autoplaced yes)
 		(uuid "3fc29def-8f47-4d48-baba-b23149435629")
 		(property "Reference" "D5"
-			(at 62.08 75.134 0)
+			(at 96.37 72.594 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2850,7 +4851,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 64.77 76.2 90)
+			(at 99.06 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2859,8 +4860,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 62.23 76.2 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 96.52 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2871,7 +4872,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 76.2 90)
+			(at 96.52 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2882,7 +4883,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 76.2 90)
+			(at 100.33 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2899,7 +4900,7 @@
 			(uuid "02bda070-9197-49c3-8452-0516a7285fa7")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D5")
 					(unit 1)
@@ -2909,7 +4910,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 45.72 71.12 0)
+		(at 80.01 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2920,7 +4921,7 @@
 		(fields_autoplaced yes)
 		(uuid "415d34da-b871-43da-9430-97170b8a3d54")
 		(property "Reference" "S3"
-			(at 45.72 71.12 0)
+			(at 80.01 68.58 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2932,7 +4933,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 45.72 74.93 0)
+			(at 80.01 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2941,8 +4942,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 45.72 71.12 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 80.01 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2953,7 +4954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 72.898 0)
+			(at 77.47 70.358 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2964,7 +4965,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 71.12 0)
+			(at 80.01 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2981,7 +4982,7 @@
 			(uuid "6c05181c-8f5d-48e5-ac03-1266cdc243e2")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S3")
 					(unit 1)
@@ -2991,7 +4992,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 48.26 76.2 0)
+		(at 82.55 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3002,7 +5003,7 @@
 		(fields_autoplaced yes)
 		(uuid "4213077d-5d34-4258-9619-91ae0b0a2c66")
 		(property "Reference" "D3"
-			(at 48.11 75.134 0)
+			(at 82.4 72.594 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3015,7 +5016,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 50.8 76.2 90)
+			(at 85.09 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3024,8 +5025,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 48.26 76.2 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 82.55 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3036,7 +5037,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 76.2 90)
+			(at 82.55 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3047,7 +5048,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.07 76.2 90)
+			(at 86.36 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3064,7 +5065,7 @@
 			(uuid "a5d66786-4f61-4fd0-a5be-979fd1a5611f")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D3")
 					(unit 1)
@@ -3074,7 +5075,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 53.34 83.82 0)
+		(at 87.63 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3085,7 +5086,7 @@
 		(fields_autoplaced yes)
 		(uuid "4282d2b1-0449-445e-94b7-e1e18213fa2a")
 		(property "Reference" "S11"
-			(at 53.34 83.82 0)
+			(at 87.63 81.28 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3097,7 +5098,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 53.34 87.63 0)
+			(at 87.63 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3106,8 +5107,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 83.82 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 87.63 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3118,7 +5119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 85.598 0)
+			(at 85.09 83.058 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3129,7 +5130,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 83.82 0)
+			(at 87.63 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3146,7 +5147,7 @@
 			(uuid "90dac1ec-dc83-4d82-aa60-68294531f115")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S11")
 					(unit 1)
@@ -3156,7 +5157,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 77.47 88.9 0)
+		(at 111.76 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3167,7 +5168,7 @@
 		(fields_autoplaced yes)
 		(uuid "437c8d69-4405-4db7-ac11-abf9cf7dcb52")
 		(property "Reference" "D14"
-			(at 77.32 87.834 0)
+			(at 111.61 85.294 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3180,7 +5181,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 80.01 88.9 90)
+			(at 114.3 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3189,8 +5190,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 77.47 88.9 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 111.76 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3201,7 +5202,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 88.9 90)
+			(at 111.76 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3212,7 +5213,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 88.9 90)
+			(at 115.57 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3229,7 +5230,7 @@
 			(uuid "dfcfe62b-c4e7-4cfe-b784-6766bfcdfeca")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D14")
 					(unit 1)
@@ -3239,7 +5240,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 77.47 101.6 0)
+		(at 111.76 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3250,7 +5251,7 @@
 		(fields_autoplaced yes)
 		(uuid "4fedaed3-7713-4286-942d-e838e86bb886")
 		(property "Reference" "D21"
-			(at 77.32 100.534 0)
+			(at 111.61 97.994 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3263,7 +5264,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 80.01 101.6 90)
+			(at 114.3 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3272,8 +5273,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 77.47 101.6 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 111.76 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3284,7 +5285,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 101.6 90)
+			(at 111.76 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3295,7 +5296,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 101.6 90)
+			(at 115.57 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3312,7 +5313,7 @@
 			(uuid "e0f09ac2-7754-4d9b-9f45-93a48e13b9b5")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D21")
 					(unit 1)
@@ -3322,7 +5323,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 59.69 120.65 0)
+		(at 93.98 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3333,7 +5334,7 @@
 		(fields_autoplaced yes)
 		(uuid "5113e86d-a247-4134-9ab7-84fde119a6be")
 		(property "Reference" "S33"
-			(at 59.69 120.65 0)
+			(at 93.98 118.11 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3345,7 +5346,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 59.69 124.46 0)
+			(at 93.98 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3354,8 +5355,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 120.65 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 93.98 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3366,7 +5367,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 122.428 0)
+			(at 91.44 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3377,7 +5378,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 120.65 0)
+			(at 93.98 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3394,7 +5395,7 @@
 			(uuid "6cd3f820-758b-4eca-8468-2a7f0071a480")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S33")
 					(unit 1)
@@ -3404,7 +5405,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 53.34 71.12 0)
+		(at 87.63 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3415,7 +5416,7 @@
 		(fields_autoplaced yes)
 		(uuid "51dc64b0-bf59-4dfb-8040-b1a519b70663")
 		(property "Reference" "S4"
-			(at 53.34 71.12 0)
+			(at 87.63 68.58 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3427,7 +5428,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 53.34 74.93 0)
+			(at 87.63 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3436,8 +5437,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 71.12 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 87.63 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3448,7 +5449,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 72.898 0)
+			(at 85.09 70.358 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3459,7 +5460,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 71.12 0)
+			(at 87.63 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3476,7 +5477,7 @@
 			(uuid "2abdb22b-2d49-495c-ac28-32222fd869c1")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S4")
 					(unit 1)
@@ -3486,7 +5487,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 38.1 71.12 0)
+		(at 72.39 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3497,7 +5498,7 @@
 		(fields_autoplaced yes)
 		(uuid "536062f5-6566-42cf-8a39-588755de5c12")
 		(property "Reference" "S2"
-			(at 38.1 71.12 0)
+			(at 72.39 68.58 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3509,7 +5510,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 38.1 74.93 0)
+			(at 72.39 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3518,8 +5519,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 38.1 71.12 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 72.39 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3530,7 +5531,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 72.898 0)
+			(at 69.85 70.358 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3541,7 +5542,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 71.12 0)
+			(at 72.39 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3558,7 +5559,7 @@
 			(uuid "9c6f7f46-457d-48df-ab3b-11cbeb92390d")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S2")
 					(unit 1)
@@ -3568,7 +5569,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 59.69 71.12 0)
+		(at 93.98 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3579,7 +5580,7 @@
 		(fields_autoplaced yes)
 		(uuid "55a28e38-44f8-4481-a382-f08d38d503d8")
 		(property "Reference" "S5"
-			(at 59.69 71.12 0)
+			(at 93.98 68.58 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3591,7 +5592,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 59.69 74.93 0)
+			(at 93.98 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3600,8 +5601,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 71.12 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 93.98 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3612,7 +5613,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 72.898 0)
+			(at 91.44 70.358 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3623,7 +5624,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 71.12 0)
+			(at 93.98 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3640,7 +5641,7 @@
 			(uuid "08ea5528-6502-45b2-8403-ecbc9bba4a0b")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S5")
 					(unit 1)
@@ -3650,7 +5651,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 40.64 88.9 0)
+		(at 74.93 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3661,7 +5662,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d4dd1a3-b7e2-4a97-81c0-4d0534b13998")
 		(property "Reference" "D9"
-			(at 40.49 87.834 0)
+			(at 74.78 85.294 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3674,7 +5675,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 43.18 88.9 90)
+			(at 77.47 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3683,8 +5684,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 40.64 88.9 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 74.93 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3695,7 +5696,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 88.9 90)
+			(at 74.93 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3706,7 +5707,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 88.9 90)
+			(at 78.74 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3723,7 +5724,7 @@
 			(uuid "80dc3c7c-4cb2-4772-a495-665feed06ffa")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D9")
 					(unit 1)
@@ -3733,7 +5734,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 55.88 88.9 0)
+		(at 90.17 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3744,7 +5745,7 @@
 		(fields_autoplaced yes)
 		(uuid "60c8b9ef-f783-41fd-bee6-602a57f375c5")
 		(property "Reference" "D11"
-			(at 55.73 87.834 0)
+			(at 90.02 85.294 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3757,7 +5758,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 58.42 88.9 90)
+			(at 92.71 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3766,8 +5767,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 55.88 88.9 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 90.17 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3778,7 +5779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 88.9 90)
+			(at 90.17 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3789,7 +5790,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 88.9 90)
+			(at 93.98 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3806,7 +5807,7 @@
 			(uuid "1d6f96a7-935d-4934-8621-3a1088921d02")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D11")
 					(unit 1)
@@ -3816,7 +5817,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 69.85 125.73 0)
+		(at 104.14 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3827,7 +5828,7 @@
 		(fields_autoplaced yes)
 		(uuid "61bc55c3-7af1-461b-a3de-eaf79817fffc")
 		(property "Reference" "D34"
-			(at 69.7 124.664 0)
+			(at 103.99 122.124 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3840,7 +5841,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 72.39 125.73 90)
+			(at 106.68 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3849,8 +5850,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 69.85 125.73 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 104.14 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3861,7 +5862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 125.73 90)
+			(at 104.14 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3872,7 +5873,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 125.73 90)
+			(at 107.95 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3889,7 +5890,7 @@
 			(uuid "e95652fe-139c-4a1d-8b0a-aeacf268e5c5")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D34")
 					(unit 1)
@@ -3899,7 +5900,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 53.34 133.35 0)
+		(at 87.63 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3910,7 +5911,7 @@
 		(fields_autoplaced yes)
 		(uuid "6440eb49-066f-436e-885a-2513a0b0e655")
 		(property "Reference" "S36"
-			(at 53.34 133.35 0)
+			(at 87.63 130.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3922,7 +5923,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 53.34 137.16 0)
+			(at 87.63 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3931,8 +5932,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 133.35 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 87.63 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3943,7 +5944,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 135.128 0)
+			(at 85.09 132.588 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3954,7 +5955,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 133.35 0)
+			(at 87.63 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3971,7 +5972,7 @@
 			(uuid "c8a5cf36-1cb4-451d-955b-1e055478ebb8")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S36")
 					(unit 1)
@@ -3981,7 +5982,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 67.31 120.65 0)
+		(at 101.6 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3992,7 +5993,7 @@
 		(fields_autoplaced yes)
 		(uuid "64996564-efe5-4996-aaad-1b2e4c02fee8")
 		(property "Reference" "S34"
-			(at 67.31 120.65 0)
+			(at 101.6 118.11 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4004,7 +6005,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 124.46 0)
+			(at 101.6 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4013,8 +6014,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 120.65 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4025,7 +6026,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 122.428 0)
+			(at 99.06 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4036,7 +6037,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 120.65 0)
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4053,7 +6054,7 @@
 			(uuid "39d55d6a-16c8-47e9-b2c8-f5f493fa5912")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S34")
 					(unit 1)
@@ -4063,7 +6064,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 45.72 96.52 0)
+		(at 80.01 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4074,7 +6075,7 @@
 		(fields_autoplaced yes)
 		(uuid "6990b120-f73e-4551-affd-3658e92e8b82")
 		(property "Reference" "S17"
-			(at 45.72 96.52 0)
+			(at 80.01 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4086,7 +6087,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 45.72 100.33 0)
+			(at 80.01 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4095,8 +6096,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 45.72 96.52 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 80.01 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4107,7 +6108,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 98.298 0)
+			(at 77.47 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4118,7 +6119,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 96.52 0)
+			(at 80.01 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4135,7 +6136,7 @@
 			(uuid "0ecbab60-8d5a-4832-89f5-81f95072df62")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S17")
 					(unit 1)
@@ -4145,7 +6146,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:OLED_128x32")
-		(at 101.6 109.22 270)
+		(at 138.43 110.49 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4156,7 +6157,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d3e1e4e-f035-4ae7-b946-b04c838e0815")
 		(property "Reference" "J1"
-			(at 107.95 115.5699 90)
+			(at 144.78 116.8399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4167,7 +6168,7 @@
 			)
 		)
 		(property "Value" "OLED_128x32"
-			(at 107.95 118.1099 90)
+			(at 144.78 119.3799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4178,7 +6179,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:OLED_128x32"
-			(at 110.49 109.22 0)
+			(at 147.32 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4189,7 +6190,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 109.22 0)
+			(at 139.7 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4200,7 +6201,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 109.22 0)
+			(at 138.43 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4223,7 +6224,7 @@
 			(uuid "94deb4f6-5b2e-462d-a342-3370f95f1350")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "J1")
 					(unit 1)
@@ -4233,7 +6234,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 33.02 125.73 0)
+		(at 67.31 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4244,7 +6245,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e4354ea-a306-443b-ace6-71c7818c7af9")
 		(property "Reference" "D29"
-			(at 32.87 124.664 0)
+			(at 67.16 122.124 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4257,7 +6258,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 35.56 125.73 90)
+			(at 69.85 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4266,8 +6267,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 33.02 125.73 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 67.31 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4278,7 +6279,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 125.73 90)
+			(at 67.31 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4289,7 +6290,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 125.73 90)
+			(at 71.12 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4306,7 +6307,7 @@
 			(uuid "d8999c05-62d6-41a9-b6ae-2cd977d46ca4")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D29")
 					(unit 1)
@@ -4316,7 +6317,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 33.02 76.2 0)
+		(at 67.31 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4327,7 +6328,7 @@
 		(fields_autoplaced yes)
 		(uuid "702a7ef9-4fa2-4c48-bddd-9f987f9e8980")
 		(property "Reference" "D1"
-			(at 32.87 75.134 0)
+			(at 67.16 72.594 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4340,7 +6341,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 35.56 76.2 90)
+			(at 69.85 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4349,8 +6350,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 33.02 76.2 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 67.31 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4361,7 +6362,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 76.2 90)
+			(at 67.31 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4372,7 +6373,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 76.2 90)
+			(at 71.12 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4389,7 +6390,7 @@
 			(uuid "1225f2a5-7147-4dc2-a02a-536f3f1e05d0")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D1")
 					(unit 1)
@@ -4399,7 +6400,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 38.1 96.52 0)
+		(at 72.39 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4410,7 +6411,7 @@
 		(fields_autoplaced yes)
 		(uuid "788e8ca6-dd54-42d7-ab5a-9697ca1836f5")
 		(property "Reference" "S16"
-			(at 38.1 96.52 0)
+			(at 72.39 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4422,7 +6423,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 38.1 100.33 0)
+			(at 72.39 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4431,8 +6432,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 38.1 96.52 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 72.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4443,7 +6444,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 98.298 0)
+			(at 69.85 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4454,7 +6455,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 96.52 0)
+			(at 72.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4471,7 +6472,7 @@
 			(uuid "76516217-fef7-4dc8-936e-0837ce39e5de")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S16")
 					(unit 1)
@@ -4481,7 +6482,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 38.1 120.65 0)
+		(at 72.39 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4492,7 +6493,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ef40372-0d65-4301-82d5-3415f47492a9")
 		(property "Reference" "S30"
-			(at 38.1 120.65 0)
+			(at 72.39 118.11 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4504,7 +6505,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 38.1 124.46 0)
+			(at 72.39 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4513,8 +6514,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 38.1 120.65 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 72.39 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4525,7 +6526,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 122.428 0)
+			(at 69.85 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4536,7 +6537,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 120.65 0)
+			(at 72.39 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4553,7 +6554,7 @@
 			(uuid "e4763f79-116b-40bc-9392-11df8523805a")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S30")
 					(unit 1)
@@ -4563,7 +6564,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 77.47 125.73 0)
+		(at 111.76 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4574,7 +6575,7 @@
 		(fields_autoplaced yes)
 		(uuid "873b0090-17b5-4e6e-8f88-332733bf3704")
 		(property "Reference" "D35"
-			(at 77.32 124.664 0)
+			(at 111.61 122.124 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4587,7 +6588,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 80.01 125.73 90)
+			(at 114.3 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4596,8 +6597,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 77.47 125.73 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 111.76 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4608,7 +6609,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 125.73 90)
+			(at 111.76 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4619,7 +6620,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 125.73 90)
+			(at 115.57 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4636,7 +6637,7 @@
 			(uuid "4a8b5934-fafc-427e-8ee3-39f672dd34e7")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D35")
 					(unit 1)
@@ -4646,7 +6647,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 48.26 101.6 0)
+		(at 82.55 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4657,7 +6658,7 @@
 		(fields_autoplaced yes)
 		(uuid "9378fb07-94da-4ff2-bd34-4dc5d723833c")
 		(property "Reference" "D17"
-			(at 48.11 100.534 0)
+			(at 82.4 97.994 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4670,7 +6671,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 50.8 101.6 90)
+			(at 85.09 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4679,8 +6680,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 48.26 101.6 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 82.55 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4691,7 +6692,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 101.6 90)
+			(at 82.55 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4702,7 +6703,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.07 101.6 90)
+			(at 86.36 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4719,7 +6720,7 @@
 			(uuid "3adff5e0-37f4-448b-b575-eb8d0ee10ce3")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D17")
 					(unit 1)
@@ -4729,7 +6730,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 62.23 88.9 0)
+		(at 96.52 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4740,7 +6741,7 @@
 		(fields_autoplaced yes)
 		(uuid "98baf34b-1c6e-45e6-bc36-786d065387e7")
 		(property "Reference" "D12"
-			(at 62.08 87.834 0)
+			(at 96.37 85.294 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4753,7 +6754,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 64.77 88.9 90)
+			(at 99.06 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4762,8 +6763,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 62.23 88.9 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 96.52 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4774,7 +6775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 88.9 90)
+			(at 96.52 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4785,7 +6786,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 88.9 90)
+			(at 100.33 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4802,7 +6803,7 @@
 			(uuid "a7dac3e3-bbcf-4944-9a07-5ae400de6825")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D12")
 					(unit 1)
@@ -4812,7 +6813,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 69.85 114.3 0)
+		(at 104.14 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4823,7 +6824,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e4be3fc-6c8e-4597-be90-1ae9a891d9b0")
 		(property "Reference" "D27"
-			(at 69.7 113.234 0)
+			(at 103.99 110.694 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4836,7 +6837,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 72.39 114.3 90)
+			(at 106.68 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4845,8 +6846,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 69.85 114.3 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 104.14 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4857,7 +6858,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 114.3 90)
+			(at 104.14 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4868,7 +6869,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 114.3 90)
+			(at 107.95 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4885,7 +6886,7 @@
 			(uuid "3697625a-ec45-4976-9abc-0a7ae6f7da2e")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D27")
 					(unit 1)
@@ -4895,7 +6896,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 30.48 120.65 0)
+		(at 64.77 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4906,7 +6907,7 @@
 		(fields_autoplaced yes)
 		(uuid "a104321d-16bb-4260-a8b6-f776a8484e43")
 		(property "Reference" "S29"
-			(at 30.48 120.65 0)
+			(at 64.77 118.11 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4918,7 +6919,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 30.48 124.46 0)
+			(at 64.77 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4927,8 +6928,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 30.48 120.65 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4939,7 +6940,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 122.428 0)
+			(at 62.23 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4950,7 +6951,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 30.48 120.65 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4967,7 +6968,7 @@
 			(uuid "919461da-fb94-4015-8e74-629e2cbbd257")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S29")
 					(unit 1)
@@ -4977,7 +6978,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 48.26 114.3 0)
+		(at 82.55 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4988,7 +6989,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3541c76-9eba-4078-8beb-a1a33c1f721f")
 		(property "Reference" "D24"
-			(at 48.11 113.234 0)
+			(at 82.4 110.694 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5001,7 +7002,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 50.8 114.3 90)
+			(at 85.09 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5010,8 +7011,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 48.26 114.3 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 82.55 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5022,7 +7023,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 114.3 90)
+			(at 82.55 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5033,7 +7034,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.07 114.3 90)
+			(at 86.36 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5050,7 +7051,7 @@
 			(uuid "772c9d67-7371-48d6-9279-b38129790831")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D24")
 					(unit 1)
@@ -5060,7 +7061,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 55.88 114.3 0)
+		(at 90.17 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5071,7 +7072,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6e456fe-143f-4216-9b39-cc6e84ad877e")
 		(property "Reference" "D25"
-			(at 55.73 113.234 0)
+			(at 90.02 110.694 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5084,7 +7085,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 58.42 114.3 90)
+			(at 92.71 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5093,8 +7094,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 55.88 114.3 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 90.17 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5105,7 +7106,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 114.3 90)
+			(at 90.17 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5116,7 +7117,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 114.3 90)
+			(at 93.98 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5133,7 +7134,7 @@
 			(uuid "68c6e64c-9546-477e-9be9-f5ab6a0194ab")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D25")
 					(unit 1)
@@ -5143,7 +7144,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 38.1 109.22 0)
+		(at 72.39 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5154,7 +7155,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9470975-1f41-4322-8233-fff782379a74")
 		(property "Reference" "S23"
-			(at 38.1 109.22 0)
+			(at 72.39 106.68 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5166,7 +7167,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 38.1 113.03 0)
+			(at 72.39 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5175,8 +7176,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 38.1 109.22 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 72.39 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5187,7 +7188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 110.998 0)
+			(at 69.85 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5198,7 +7199,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 109.22 0)
+			(at 72.39 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5215,7 +7216,7 @@
 			(uuid "b8c104b5-f905-4e21-be4c-0313772c280f")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S23")
 					(unit 1)
@@ -5225,7 +7226,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 74.93 120.65 0)
+		(at 109.22 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5236,7 +7237,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab370c94-931e-400f-8a67-20137f1cc3db")
 		(property "Reference" "S35"
-			(at 74.93 120.65 0)
+			(at 109.22 118.11 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5248,7 +7249,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 74.93 124.46 0)
+			(at 109.22 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5257,8 +7258,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 120.65 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 109.22 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5269,7 +7270,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 122.428 0)
+			(at 106.68 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5280,7 +7281,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 120.65 0)
+			(at 109.22 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5297,7 +7298,7 @@
 			(uuid "58a58978-c699-4c22-9cc4-abfa79db0714")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S35")
 					(unit 1)
@@ -5307,7 +7308,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 74.93 109.22 0)
+		(at 109.22 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5318,7 +7319,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac4ba0f5-bdb2-4fcd-8744-94b02d336856")
 		(property "Reference" "S28"
-			(at 74.93 109.22 0)
+			(at 109.22 106.68 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5330,7 +7331,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 74.93 113.03 0)
+			(at 109.22 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5339,8 +7340,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 109.22 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 109.22 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5351,7 +7352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 110.998 0)
+			(at 106.68 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5362,7 +7363,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 109.22 0)
+			(at 109.22 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5379,7 +7380,7 @@
 			(uuid "64312a89-2cb8-4594-8c39-396db4c21d86")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S28")
 					(unit 1)
@@ -5389,7 +7390,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 45.72 120.65 0)
+		(at 80.01 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5400,7 +7401,7 @@
 		(fields_autoplaced yes)
 		(uuid "adb132fc-96e5-4640-a51b-f410c2ac7be9")
 		(property "Reference" "S31"
-			(at 45.72 120.65 0)
+			(at 80.01 118.11 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5412,7 +7413,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 45.72 124.46 0)
+			(at 80.01 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5421,8 +7422,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 45.72 120.65 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 80.01 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5433,7 +7434,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 122.428 0)
+			(at 77.47 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5444,7 +7445,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 120.65 0)
+			(at 80.01 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5461,7 +7462,7 @@
 			(uuid "eabebd1a-2ac0-4f1f-a9f5-7b786c71c46a")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S31")
 					(unit 1)
@@ -5471,7 +7472,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 77.47 138.43 0)
+		(at 111.76 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5482,7 +7483,7 @@
 		(fields_autoplaced yes)
 		(uuid "aedd4da3-ff4a-455b-8459-0c0f9cac0bee")
 		(property "Reference" "D39"
-			(at 77.32 137.364 0)
+			(at 111.61 134.824 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5495,7 +7496,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 80.01 138.43 90)
+			(at 114.3 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5504,8 +7505,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 77.47 138.43 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 111.76 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5516,7 +7517,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 138.43 90)
+			(at 111.76 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5527,7 +7528,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 138.43 90)
+			(at 115.57 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5544,7 +7545,7 @@
 			(uuid "39e6377c-f4af-4fa6-824e-96c1ab89f215")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D39")
 					(unit 1)
@@ -5554,7 +7555,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 30.48 109.22 0)
+		(at 64.77 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5565,7 +7566,7 @@
 		(fields_autoplaced yes)
 		(uuid "b11d3168-d389-467f-b670-23732ae275ce")
 		(property "Reference" "S22"
-			(at 30.48 109.22 0)
+			(at 64.77 106.68 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5577,7 +7578,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 30.48 113.03 0)
+			(at 64.77 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5586,8 +7587,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 30.48 109.22 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 64.77 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5598,7 +7599,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 110.998 0)
+			(at 62.23 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5609,7 +7610,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 30.48 109.22 0)
+			(at 64.77 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5626,7 +7627,7 @@
 			(uuid "87dc65d4-d4f5-4911-bd95-e6496c9d5da9")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S22")
 					(unit 1)
@@ -5636,7 +7637,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 74.93 71.12 0)
+		(at 109.22 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5647,7 +7648,7 @@
 		(fields_autoplaced yes)
 		(uuid "b15fdc3f-86ed-4169-9f33-b19dd312a28a")
 		(property "Reference" "S7"
-			(at 74.93 71.12 0)
+			(at 109.22 68.58 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5659,7 +7660,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 74.93 74.93 0)
+			(at 109.22 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5668,8 +7669,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 71.12 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 109.22 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5680,7 +7681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 72.898 0)
+			(at 106.68 70.358 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5691,7 +7692,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 71.12 0)
+			(at 109.22 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5708,7 +7709,7 @@
 			(uuid "ad0ed656-32e1-4e5e-9a57-b1d096cb188f")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S7")
 					(unit 1)
@@ -5718,7 +7719,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 62.23 125.73 0)
+		(at 96.52 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5729,7 +7730,7 @@
 		(fields_autoplaced yes)
 		(uuid "b40fcc2a-bbab-4c42-947b-ef381f0b3af2")
 		(property "Reference" "D33"
-			(at 62.08 124.664 0)
+			(at 96.37 122.124 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5742,7 +7743,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 64.77 125.73 90)
+			(at 99.06 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5751,8 +7752,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 62.23 125.73 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 96.52 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5763,7 +7764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 125.73 90)
+			(at 96.52 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5774,7 +7775,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 125.73 90)
+			(at 100.33 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5791,7 +7792,7 @@
 			(uuid "a7c0999c-48de-4641-8701-35cd9d168ca2")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D33")
 					(unit 1)
@@ -5801,7 +7802,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 67.31 71.12 0)
+		(at 101.6 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5812,7 +7813,7 @@
 		(fields_autoplaced yes)
 		(uuid "b95ccbd7-37f6-4588-a2de-abf1a0579fac")
 		(property "Reference" "S6"
-			(at 67.31 71.12 0)
+			(at 101.6 68.58 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5824,7 +7825,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 74.93 0)
+			(at 101.6 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5833,8 +7834,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 71.12 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5845,7 +7846,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 72.898 0)
+			(at 99.06 70.358 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5856,7 +7857,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 71.12 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5873,7 +7874,7 @@
 			(uuid "fe27622d-924e-4220-adf6-70b5888fd92e")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S6")
 					(unit 1)
@@ -5883,7 +7884,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 30.48 96.52 0)
+		(at 64.77 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5894,7 +7895,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba1e7b1a-9975-4647-aeb6-d236aaf881a5")
 		(property "Reference" "S15"
-			(at 30.48 96.52 0)
+			(at 64.77 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5906,7 +7907,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 30.48 100.33 0)
+			(at 64.77 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5915,8 +7916,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 30.48 96.52 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 64.77 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5927,7 +7928,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 98.298 0)
+			(at 62.23 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5938,7 +7939,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 30.48 96.52 0)
+			(at 64.77 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5955,7 +7956,7 @@
 			(uuid "983ca859-2098-481f-ade6-55e6c0f9c05d")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S15")
 					(unit 1)
@@ -5965,7 +7966,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 59.69 83.82 0)
+		(at 93.98 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5976,7 +7977,7 @@
 		(fields_autoplaced yes)
 		(uuid "c24d413e-38b1-4f0f-8118-1ca3f55a3d48")
 		(property "Reference" "S12"
-			(at 59.69 83.82 0)
+			(at 93.98 81.28 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5988,7 +7989,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 59.69 87.63 0)
+			(at 93.98 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5997,8 +7998,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 83.82 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 93.98 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6009,7 +8010,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 85.598 0)
+			(at 91.44 83.058 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6020,7 +8021,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 83.82 0)
+			(at 93.98 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6037,7 +8038,7 @@
 			(uuid "27f57f36-caf1-4cf0-9292-26d81826fcb0")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S12")
 					(unit 1)
@@ -6047,7 +8048,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 55.88 76.2 0)
+		(at 90.17 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6058,7 +8059,7 @@
 		(fields_autoplaced yes)
 		(uuid "c288d2ca-d63d-43cb-a82e-df5c1b3de26b")
 		(property "Reference" "D4"
-			(at 55.73 75.134 0)
+			(at 90.02 72.594 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6071,7 +8072,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 58.42 76.2 90)
+			(at 92.71 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6080,8 +8081,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 55.88 76.2 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 90.17 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6092,7 +8093,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 76.2 90)
+			(at 90.17 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6103,7 +8104,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 76.2 90)
+			(at 93.98 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6120,7 +8121,7 @@
 			(uuid "b5bdb2a9-6c06-44dc-8e9c-d70e113c68ce")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D4")
 					(unit 1)
@@ -6130,7 +8131,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 59.69 133.35 0)
+		(at 93.98 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6141,7 +8142,7 @@
 		(fields_autoplaced yes)
 		(uuid "c34dcf89-8e7b-4187-a302-336f48df9ea4")
 		(property "Reference" "S37"
-			(at 59.69 133.35 0)
+			(at 93.98 130.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6153,7 +8154,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 59.69 137.16 0)
+			(at 93.98 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6162,8 +8163,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 133.35 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 93.98 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6174,7 +8175,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 135.128 0)
+			(at 91.44 132.588 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6185,7 +8186,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 133.35 0)
+			(at 93.98 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6202,7 +8203,7 @@
 			(uuid "14ab8fd6-e022-4761-a6d3-199b12cd36c0")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S37")
 					(unit 1)
@@ -6212,7 +8213,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 77.47 76.2 0)
+		(at 111.76 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6223,7 +8224,7 @@
 		(fields_autoplaced yes)
 		(uuid "c46f1bb7-a48e-4a06-90ef-0514facde8e5")
 		(property "Reference" "D7"
-			(at 77.32 75.134 0)
+			(at 111.61 72.594 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6236,7 +8237,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 80.01 76.2 90)
+			(at 114.3 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6245,8 +8246,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 77.47 76.2 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 111.76 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6257,7 +8258,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 76.2 90)
+			(at 111.76 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6268,7 +8269,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 76.2 90)
+			(at 115.57 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6285,7 +8286,7 @@
 			(uuid "af648998-29d6-4565-b20a-5eb8fbb7868d")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D7")
 					(unit 1)
@@ -6295,7 +8296,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 69.85 88.9 0)
+		(at 104.14 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6306,7 +8307,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7369e15-7f76-48d2-952f-b454525460b6")
 		(property "Reference" "D13"
-			(at 69.7 87.834 0)
+			(at 103.99 85.294 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6319,7 +8320,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 72.39 88.9 90)
+			(at 106.68 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6328,8 +8329,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 69.85 88.9 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 104.14 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6340,7 +8341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 88.9 90)
+			(at 104.14 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6351,7 +8352,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 88.9 90)
+			(at 107.95 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6368,7 +8369,7 @@
 			(uuid "5d203b54-eb2c-4711-948e-2c1f9d2e43f5")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D13")
 					(unit 1)
@@ -6378,7 +8379,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 59.69 96.52 0)
+		(at 93.98 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6389,7 +8390,7 @@
 		(fields_autoplaced yes)
 		(uuid "d007620f-05ab-4ccb-9f0c-d51bd6fbe1fa")
 		(property "Reference" "S19"
-			(at 59.69 96.52 0)
+			(at 93.98 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6401,7 +8402,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 59.69 100.33 0)
+			(at 93.98 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6410,8 +8411,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 96.52 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 93.98 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6422,7 +8423,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 98.298 0)
+			(at 91.44 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6433,7 +8434,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 96.52 0)
+			(at 93.98 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6450,7 +8451,7 @@
 			(uuid "e53df9bc-7031-46b5-a55c-31e54dc548c8")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S19")
 					(unit 1)
@@ -6460,7 +8461,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 62.23 114.3 0)
+		(at 96.52 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6471,7 +8472,7 @@
 		(fields_autoplaced yes)
 		(uuid "d311ee7f-5e2f-4eae-97e2-2bd25ef4bc79")
 		(property "Reference" "D26"
-			(at 62.08 113.234 0)
+			(at 96.37 110.694 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6484,7 +8485,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 64.77 114.3 90)
+			(at 99.06 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6493,8 +8494,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 62.23 114.3 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 96.52 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6505,7 +8506,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 114.3 90)
+			(at 96.52 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6516,7 +8517,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 114.3 90)
+			(at 100.33 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6533,7 +8534,7 @@
 			(uuid "916015ed-68c9-49e0-9149-0200cfe11fb8")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D26")
 					(unit 1)
@@ -6543,7 +8544,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 67.31 109.22 0)
+		(at 101.6 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6554,7 +8555,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4d45077-3584-4140-8c20-12b59c13c341")
 		(property "Reference" "S27"
-			(at 67.31 109.22 0)
+			(at 101.6 106.68 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6566,7 +8567,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 113.03 0)
+			(at 101.6 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6575,8 +8576,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 109.22 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6587,7 +8588,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 110.998 0)
+			(at 99.06 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6598,7 +8599,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 109.22 0)
+			(at 101.6 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6615,7 +8616,7 @@
 			(uuid "27f5cafc-f4fb-4aec-b6ae-0f3be5d88987")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S27")
 					(unit 1)
@@ -6625,7 +8626,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 40.64 76.2 0)
+		(at 74.93 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6636,7 +8637,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7b7ea3e-69f7-4761-b4a6-b7d8587ebf35")
 		(property "Reference" "D2"
-			(at 40.49 75.134 0)
+			(at 74.78 72.594 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6649,7 +8650,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 43.18 76.2 90)
+			(at 77.47 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6658,8 +8659,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 40.64 76.2 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 74.93 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6670,7 +8671,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 76.2 90)
+			(at 74.93 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6681,7 +8682,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 76.2 90)
+			(at 78.74 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6698,7 +8699,7 @@
 			(uuid "07eb72be-6618-40b0-a24c-4d79e2a27c9f")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D2")
 					(unit 1)
@@ -6708,7 +8709,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 67.31 96.52 0)
+		(at 101.6 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6719,7 +8720,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc907662-39fb-47fa-a959-b2b7c430d881")
 		(property "Reference" "S20"
-			(at 67.31 96.52 0)
+			(at 101.6 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6731,7 +8732,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 100.33 0)
+			(at 101.6 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6740,8 +8741,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 96.52 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6752,7 +8753,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 98.298 0)
+			(at 99.06 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6763,7 +8764,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 96.52 0)
+			(at 101.6 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6780,7 +8781,7 @@
 			(uuid "a5980b18-2ace-4686-b566-9c9c97806170")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S20")
 					(unit 1)
@@ -6790,7 +8791,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 74.93 133.35 0)
+		(at 109.22 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6801,7 +8802,7 @@
 		(fields_autoplaced yes)
 		(uuid "dfb35389-5d89-4069-8c3e-86db230e52d6")
 		(property "Reference" "S39"
-			(at 74.93 133.35 0)
+			(at 109.22 130.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6813,7 +8814,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 74.93 137.16 0)
+			(at 109.22 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6822,8 +8823,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 133.35 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 109.22 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6834,7 +8835,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 135.128 0)
+			(at 106.68 132.588 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6845,7 +8846,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 133.35 0)
+			(at 109.22 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6862,7 +8863,7 @@
 			(uuid "f448f6e2-f85a-48b5-b209-19d6e687a8de")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S39")
 					(unit 1)
@@ -6872,7 +8873,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 67.31 133.35 0)
+		(at 101.6 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6883,7 +8884,7 @@
 		(fields_autoplaced yes)
 		(uuid "e19fc93c-62db-418c-9563-c68f55f3c687")
 		(property "Reference" "S38"
-			(at 67.31 133.35 0)
+			(at 101.6 130.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6895,7 +8896,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 137.16 0)
+			(at 101.6 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6904,8 +8905,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 133.35 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6916,7 +8917,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 135.128 0)
+			(at 99.06 132.588 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6927,7 +8928,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 133.35 0)
+			(at 101.6 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6944,7 +8945,7 @@
 			(uuid "c7472a95-5543-4cf0-bf6a-dcbd453f31ff")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S38")
 					(unit 1)
@@ -6954,7 +8955,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 69.85 101.6 0)
+		(at 104.14 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6965,7 +8966,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5455728-265d-4cf2-812e-8c409533ad7e")
 		(property "Reference" "D20"
-			(at 69.7 100.534 0)
+			(at 103.99 97.994 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6978,7 +8979,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 72.39 101.6 90)
+			(at 106.68 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6987,8 +8988,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 69.85 101.6 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 104.14 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6999,7 +9000,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 101.6 90)
+			(at 104.14 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7010,7 +9011,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 101.6 90)
+			(at 107.95 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7027,7 +9028,7 @@
 			(uuid "11f03fc6-930b-4508-a0aa-4f4698786bce")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D20")
 					(unit 1)
@@ -7037,7 +9038,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 48.26 88.9 0)
+		(at 82.55 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7048,7 +9049,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7cc24fb-977c-418b-bb1e-6dc353c7306d")
 		(property "Reference" "D10"
-			(at 48.11 87.834 0)
+			(at 82.4 85.294 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7061,7 +9062,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 50.8 88.9 90)
+			(at 85.09 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7070,8 +9071,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 48.26 88.9 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 82.55 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7082,7 +9083,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 88.9 90)
+			(at 82.55 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7093,7 +9094,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.07 88.9 90)
+			(at 86.36 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7110,7 +9111,7 @@
 			(uuid "f1836605-523a-43f9-893c-40f7d2535651")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D10")
 					(unit 1)
@@ -7120,7 +9121,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 45.72 109.22 0)
+		(at 80.01 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7131,7 +9132,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb0b1546-c807-41d6-90f2-484583106455")
 		(property "Reference" "S24"
-			(at 45.72 109.22 0)
+			(at 80.01 106.68 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7143,7 +9144,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 45.72 113.03 0)
+			(at 80.01 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7152,8 +9153,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 45.72 109.22 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 80.01 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7164,7 +9165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 110.998 0)
+			(at 77.47 108.458 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7175,7 +9176,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 109.22 0)
+			(at 80.01 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7192,7 +9193,7 @@
 			(uuid "652fc6be-8f0a-4cea-8797-85c6e43337cb")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S24")
 					(unit 1)
@@ -7202,7 +9203,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 53.34 96.52 0)
+		(at 87.63 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7213,7 +9214,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed2d5360-c4fc-42ea-9d2d-b952d725d5ec")
 		(property "Reference" "S18"
-			(at 53.34 96.52 0)
+			(at 87.63 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7225,7 +9226,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 53.34 100.33 0)
+			(at 87.63 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7234,8 +9235,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 96.52 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 87.63 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7246,7 +9247,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 98.298 0)
+			(at 85.09 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7257,7 +9258,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 96.52 0)
+			(at 87.63 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7274,7 +9275,7 @@
 			(uuid "72b94ecb-6270-4b93-bb6f-5511e18c50fa")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S18")
 					(unit 1)
@@ -7283,8 +9284,8 @@
 		)
 	)
 	(symbol
-		(lib_id "ScottoKeebs:MCU_RP2040_Zero")
-		(at 102.87 78.74 0)
+		(lib_id "Connector_Audio:AudioJack4")
+		(at 158.75 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7293,9 +9294,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f707d9ab-5fa1-4af0-81fb-d0d4616720c3")
-		(property "Reference" "U1"
-			(at 102.87 62.23 0)
+		(uuid "ee01f982-6127-433e-980f-d27767e48e33")
+		(property "Reference" "J2"
+			(at 156.21 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7304,8 +9305,8 @@
 				)
 			)
 		)
-		(property "Value" "RP2040_Zero"
-			(at 102.87 64.77 0)
+		(property "Value" "AudioJack4"
+			(at 156.21 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7314,8 +9315,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MCU:RP2040_Zero"
-			(at 93.98 73.66 0)
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal"
+			(at 158.75 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7326,7 +9327,93 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 73.66 0)
+			(at 158.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Audio Jack, 4 Poles (TRRS)"
+			(at 158.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "S"
+			(uuid "ea08732a-0532-4dbc-bb81-e9449f725d9c")
+		)
+		(pin "T"
+			(uuid "8d9daf1f-2309-4454-86b7-d1066bfd9d43")
+		)
+		(pin "R1"
+			(uuid "97159598-405c-427f-a584-31ce1ceefa64")
+		)
+		(pin "R2"
+			(uuid "141ffb94-6a72-46a3-a61a-99fd36923212")
+		)
+		(instances
+			(project "Mykeyboard_left"
+				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:MCU_RP2040_Zero")
+		(at 147.32 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f707d9ab-5fa1-4af0-81fb-d0d4616720c3")
+		(property "Reference" "U1"
+			(at 147.32 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RP2040_Zero"
+			(at 147.32 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MCU:RP2040_Zero"
+			(at 138.43 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7337,7 +9424,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 78.74 0)
+			(at 147.32 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7417,7 +9504,7 @@
 			(uuid "9dac093c-c836-4106-8d11-c4a1410de3fa")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "U1")
 					(unit 1)
@@ -7427,7 +9514,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 62.23 138.43 0)
+		(at 96.52 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7438,7 +9525,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9451c63-727e-49be-a46e-ab9b03c0cc26")
 		(property "Reference" "D37"
-			(at 62.08 137.364 0)
+			(at 96.37 134.824 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7451,7 +9538,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 64.77 138.43 90)
+			(at 99.06 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7460,8 +9547,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 62.23 138.43 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 96.52 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7472,7 +9559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 138.43 90)
+			(at 96.52 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7483,7 +9570,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 138.43 90)
+			(at 100.33 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7500,7 +9587,7 @@
 			(uuid "27e16b6b-351d-407a-a71c-6c8787484f48")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D37")
 					(unit 1)
@@ -7510,7 +9597,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 33.02 114.3 0)
+		(at 67.31 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7521,7 +9608,7 @@
 		(fields_autoplaced yes)
 		(uuid "feb6badf-0093-44a1-8b29-892d0c413d5c")
 		(property "Reference" "D22"
-			(at 32.87 113.234 0)
+			(at 67.16 110.694 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7534,7 +9621,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 35.56 114.3 90)
+			(at 69.85 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7543,8 +9630,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Encoder_Ano"
-			(at 33.02 114.3 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 67.31 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7555,7 +9642,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 114.3 90)
+			(at 67.31 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7566,7 +9653,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 114.3 90)
+			(at 71.12 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7583,7 +9670,7 @@
 			(uuid "1a521e64-e8c3-46ea-ba3d-d301c9db9775")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "D22")
 					(unit 1)
@@ -7593,7 +9680,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 30.48 83.82 0)
+		(at 64.77 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7604,7 +9691,7 @@
 		(fields_autoplaced yes)
 		(uuid "fed7217b-7c67-4fdc-921e-d93df047bdd9")
 		(property "Reference" "S8"
-			(at 30.48 83.82 0)
+			(at 64.77 81.28 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7616,7 +9703,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 30.48 87.63 0)
+			(at 64.77 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7625,8 +9712,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 30.48 83.82 0)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 64.77 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7637,7 +9724,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 85.598 0)
+			(at 62.23 83.058 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7648,7 +9735,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 30.48 83.82 0)
+			(at 64.77 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7665,7 +9752,7 @@
 			(uuid "d34196a3-07e2-41a2-92d1-8af1f1f14a66")
 		)
 		(instances
-			(project "Mykeyboard"
+			(project "Mykeyboard_left"
 				(path "/080b4066-77db-45c0-ac5a-5ec52c25c9d8"
 					(reference "S8")
 					(unit 1)
